@@ -1,0 +1,52 @@
+.contenedor_nosotros {
+    width:100%;
+    height:920px;
+    background-color:white;
+}
+#subcontenedor_nosotros{    
+    border-bottom:640px solid #4D4D4D;
+    width:100%;
+    height:280px;
+    background:url(iconos/nst01.svg) no-repeat;
+    background-position:center;
+    background-size:90% 90%;
+}
+.contenedor_nosotros article {   
+    text-align:justify;
+    width:75%;  
+    max-width:650px;
+    margin:auto;
+}
+#nosotros1 {
+    padding-top:320px;   
+}
+.contenedor_nosotros h2, .contenedor_nosotros p{
+    margin:0;
+}
+.contenedor_nosotros h2 {
+    font-size:1.3em;  
+    text-indent:0.5em;
+}
+.contenedor_nosotros p {
+    color:white;
+    padding-bottom:1.5em;
+    padding-top:0.3em;
+    font-size:0.95em;
+    text-indent:3em;
+}
+#nst01 {
+    background-color:#5FD3FF;
+    width:70%;    
+}
+#nst02 {
+    background-color:#A9E77D;
+    width:32%;
+}
+#nst03 {
+    background-color:#FF5F81;
+    width:62%;
+}
+#nst04 {
+    background-color:#F7D22F;
+    width:32%;
+}

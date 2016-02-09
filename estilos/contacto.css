@@ -1,0 +1,147 @@
+.contenedor_contacto {
+    background-color:white;
+    width:100%;
+    height:100%;
+}
+
+/* formulario */
+
+#formulario { 
+    height:200px;
+    width:80%;  
+    max-width: 620px;
+    margin:auto;
+    margin-top:2em
+}
+#infoformulario1 {
+    height:100%;
+    width:50%;
+    float:left;
+}
+#infoformulario2 {
+    height:100%;
+    width:48%;    
+    float:right;
+}
+
+#infoformulario1 label {
+    font-size:1em;
+    display:block;
+}
+
+#infoformulario1 input {    
+    height:10%;
+    width:100%;
+}
+#infoformulario2 input {
+    float:right;
+    background-color:#4D4D4D;
+    color:white;
+    font-size:1.1em;
+    width:6em;
+    height:2em;    
+    margin-top:0.3em;
+    border-style:none;
+}
+#infoformulario2 input:hover {
+   background-color:#F7931E; 
+}
+#infoformulario2 textarea {
+    float:right;
+    margin-top:8%;
+    width:100%;
+    height:57%;
+}
+#infoformulario1 input, #infoformulario2 textarea {
+    background-color:#F2F2F2;
+    border-style: none;
+}
+
+/* contacto 1 */
+
+#infocontacto1 {
+    width:100%;
+    height:80px;
+    max-width:620px;
+    margin:auto;
+    font-size:1.1em;
+}
+#contacto1 {
+    float:left;
+    width:35%;
+}
+#contacto2 {
+    float:right;
+    width:65%;
+}
+#contacto1:before {
+    content:"";
+    background:url(iconos/info01.svg) no-repeat;
+    width:5em;
+    height:5em;
+    float:left;
+}
+#contacto2:before {
+    content:"";
+    background:url(iconos/info02.svg) no-repeat;
+    width:5em;
+    height:5em;
+    float:left;
+}
+
+
+/* contacto 2*/
+
+#infocontacto2 {
+    background-color:#4D4D4D;
+    height:550px; 
+    width:100%;
+    color:white;
+    margin-top:1.5em;
+    margin-bottom:0;
+}
+#subcontenedor_infocontacto2 {
+    width:80%;
+    max-width:620px;
+    margin:0 auto;
+    padding-top:1em;
+}
+
+#contacto3 {
+    float:left;
+    width:58%;
+}
+#contacto4 {
+    float:right;
+    width:40%;
+    margin-top:10%;
+}
+
+#contacto4 p:nth-child(1):before {
+    content:"";
+    background:url(iconos/info03.svg) no-repeat;    
+    width:1.5em;
+    height:2em;
+    float:left;
+    background-size:80%;
+    padding-right:1em;
+}
+#contacto4 p:nth-child(2):before {
+    content:"";
+    background:url(iconos/info04.svg) no-repeat;
+    background-size:80%;
+    padding-right:1em;
+    width:1.5em;
+    height:3em;
+    float:left;
+}
+#contacto4 p:last-child {
+    padding-left:2.5em;
+}
+#infocontacto2 h1 {
+    font-size:1.2em;
+}
+iframe {    
+    width:100%;
+    height:270px;    
+}

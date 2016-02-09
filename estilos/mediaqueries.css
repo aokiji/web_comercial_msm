@@ -1,0 +1,463 @@
+@media (max-width:1100px) {
+	/* header */
+	.menu p {
+		font-size:1.3em;
+		padding:2%;
+	}	
+	
+}
+
+
+@media (max-width:899px) {
+	/* header */
+	.menu p {
+		font-size:1.1em;
+		padding:1.5%;
+	}
+    /* section index */    
+	#img01 {
+		background:url(imagenes/index01_900.jpg) no-repeat;
+	}
+	#img02 {
+		background:url(imagenes/index02_900.jpg) no-repeat;
+	}
+	#img03 {
+		background:url(imagenes/index03_900.jpg) no-repeat;
+	}
+	/* section index */
+	.contenedor_index h1 {
+		font-size:2.5em;	
+	}
+    /*section nosotros */
+    .contenedor_nosotros h2 {
+        font-size:1.1em; 
+    }
+}
+
+
+@media (max-width:767px) {
+    
+	/* header */
+    
+    header {
+        height:80px;
+    }
+	.logo {	
+		height:90%;
+		width:65%;	
+		margin-top:5px;
+	}
+	nav {
+	    border-bottom:80px solid #F7931E;
+		width:20%;	
+	}
+	.menu {
+		background:url(iconos/desplegable.svg) no-repeat center;	
+		width:40px;
+		height:40px;
+		position:absolute;
+		top:2%;
+		left:84%;
+	}
+	.menu p {
+		/*display:none;*/
+        display:block;
+        line-height: 10px;
+	}
+
+	
+	/* section index */
+    
+	#img01 {
+		background:url(imagenes/index01_768.jpg) no-repeat;
+		height:448px;
+	}
+	#img02 {
+		background:url(imagenes/index02_768.jpg) no-repeat;
+		height:448px;
+	}
+	#img03 {
+		background:url(imagenes/index03_768.jpg) no-repeat;
+		height:448px;
+	}
+	.contenedor_index {
+		height:448px;	
+	}
+	.contenedor_index h1 {
+		font-size:1.8em;	
+	}
+	.sub02 {
+		top:40%;	
+	}
+	
+	/* section subindex */
+    
+	.contenedor_subindex {			
+		height:80px;			
+		padding-top:90px;	
+	}
+	#subindex01, #subindex02, #subindex03 {		
+		background-size:120px 120px;				
+	}
+.contenedor_subindex h2 {	
+		font-size:1em;
+		padding:4%;	
+		padding-top:120px;
+	}
+	h3 {
+		font-size:1.2em;
+	}
+        
+    
+    /* section servicios */
+    
+    .contenedor_servicios {
+        height:750px;
+    }
+    #servicios1 {
+        height:350px;
+    }
+    .descripcion {
+        height:30px;
+    }
+    .descripcion h1 {
+        line-height:25px;
+        font-size:1.1em;
+    }
+    .descripcion h1:after {
+        top:105px;
+    }
+    .contenedor_servicios h2 {
+        font-size:1em;
+        margin:0;
+        padding-top:100px;
+    }
+    .contenedor_servicios p {
+        font-size:0.9em;
+        max-width:100px;
+        padding-left:10px;
+        padding-right:10px;
+        margin:0;
+    }
+    #serv01, #serv02, #serv03, #serv04, #serv05, #serv06, #serv07, #serv08 {
+        background-size:90px;
+        background-position:top; 
+    }
+    
+    /* section nosotros */
+    
+    .contenedor_nosotros {
+        height:100%;
+    }
+    #subcontenedor_nosotros{   
+        height:200px;
+    }
+    #nosotros1 {
+        padding-top:240px;   
+    }
+    .contenedor_nosotros h2 {
+        font-size:1em;  
+        text-indent:0.5em;
+    }
+    .contenedor_nosotros p {
+        font-size:0.9em;
+    }
+    #nst01 {
+        background-color:#5FD3FF;
+        width:90%;    
+    }
+    #nst02 {
+        background-color:#A9E77D;
+        width:42%;
+    }
+    #nst03 {
+        background-color:#FF5F81;
+        width:80%;
+    }
+    #nst04 {
+        background-color:#F7D22F;
+        width:42%;
+    }
+    
+    /* section contacto */
+    
+    #formulario { 
+        height:320px;
+        width:80%;  
+        max-width: 620px;
+        margin:auto;
+        margin-top:2em
+    }
+    #infoformulario1 {
+        height:50%;
+        width:100%;
+        float:none;
+    }
+    #infoformulario2 {
+        height:50%;
+        width:100%;   
+        float:none;
+    }
+    #infoformulario1 input {    
+        height:15%;
+    }
+    #infoformulario2 input {
+        font-size:1em;
+    }
+
+    #infoformulario2 textarea {
+        margin-top:0;
+        height:75%;
+    }
+    
+    #infocontacto1 {
+        width:100%;
+        height:100%;        
+        margin-top:1em;
+        max-width:100%;
+    }
+    #contacto1, #contacto2 {
+        float:none;      
+        margin:0 auto; 
+        width:100%;
+    }
+    #contacto1 {
+        border-top:2px solid #F2F2F2;
+        border-bottom:2px solid #F2F2F2;
+    }
+    #contacto1 p, #contacto2 p {
+        margin:0;
+        text-align:center;
+        padding:0.5em;
+    }
+    #contacto1:before, #contacto2:before {        
+        margin:0;
+        padding:0;
+        width:100%;
+        background-position:center;
+    }   
+
+    
+    #infocontacto2 {
+        height:100%; 
+        margin:0;
+    }    
+    #contacto3 {
+        float:none;
+        width:100%;
+    }
+    #contacto4 {
+        float:none;
+        width:100%;
+        margin-top:0;
+        display:flex;
+        font-size:0.95em;
+    }
+    #contacto4 p:nth-child(1):before,
+    #contacto4 p:nth-child(2):before {
+        height:9em;
+        float:left;
+    }
+    #contacto4 p:last-child {
+        padding-left:1em;
+    }
+    #infocontacto2 h1 {
+        font-size:1.1em;
+    }
+    
+}
+
+
+@media (max-width:480px) {
+	
+    /* header */
+
+    header {
+        height:100px;
+    }
+	.logo {
+		width:94%;
+		height:70%;
+        margin:2%;  
+    }
+	nav {
+		float:none;
+		width:100%;
+		height:25px;
+		border:none;
+		background-color:#F7931E;
+		position:absolute;
+		top:80px;
+	}
+	.menu {
+		line-height:25px;	
+		font-size:0;
+        width:10%;
+		height:20px;
+		background:url(iconos/desplegable.svg) no-repeat center;
+		left:45%;
+	}
+	
+    
+	/* section index */
+
+	#img01, #img02, #img03 {
+		background-image:none;        
+		height:280px;
+	}	
+	.contenedor_index {
+		height:280px;	
+	}
+	.contenedor_index h1 {
+		font-size:2.2em;
+        line-height: 1.3em;
+        padding:0;
+        background-color:transparent;
+        margin:auto; 
+	}
+	.sub01, .sub02, .sub03 {
+		float:none;
+		text-align:center;		
+		top:10%;
+        max-width:90%;       
+	}
+	
+    
+	/* section subindex */
+    
+	.contenedor_subindex {
+		padding-top:55px;	
+	}
+	#subindex01, #subindex02, #subindex03 {		
+		background-size:80px 80px;				
+	}
+    .contenedor_subindex h2 {	
+		font-size:0.8em;
+		padding:4%;	
+		padding-top:80px;
+	}
+	h3 {
+		font-size:1em;
+	}
+    
+    /* section servicios */
+    
+    .contenedor_servicios {
+        height:100%;
+    }
+    #servicios1 {
+        height:50%;
+    }
+    .descripcion {
+        height:30px;
+    }
+    .descripcion h1 {
+        line-height:30px;
+        font-size:1em;
+        padding:0;
+        text-align:center;        
+    }
+    .descripcion h1:after {
+        display:none;
+    }
+    .contenedor_servicios ul {
+        flex-wrap: wrap;
+        width:90%;
+        margin:auto
+    }
+    .contenedor_servicios h2 {
+        font-size:1em;        
+        padding-top:100px;
+        margin:0;        
+    }
+    .contenedor_servicios p {
+        font-size:0.9em; 
+        max-width:120px;
+        padding-bottom:20px;
+    } 
+    
+    /* section nosotros */
+    
+    
+    .contenedor_nosotros {
+        width:100%;
+        height:100%;
+        background-color:white;
+    }
+    #subcontenedor_nosotros{    
+        border:0;
+        width:100%;
+        height:100%;
+        background-image:none;
+    }
+    .contenedor_nosotros article {  
+        width:100%;  
+    }
+    #nosotros1, #nosotros2 {
+        padding-top:55%;
+        background-repeat:no-repeat;
+        background-position:top;
+        background-size:90%;        
+    }
+    #nosotros1 {
+        background-image:url(iconos/nst02.svg);
+    }
+    #nosotros2 {
+        background-image:url(iconos/nst03.svg);
+    }
+    .contenedor_nosotros h2, .contenedor_nosotros p{        
+        padding-left:5%;
+        padding-right:5%;
+    }
+    .contenedor_nosotros h2 {
+        font-size:1.1em;  
+        text-indent:0em;
+    }
+    .contenedor_nosotros p {       
+        padding-bottom:2em;
+        padding-top:1em;
+        text-indent:2em;
+        background-color:#4D4D4D;
+    }
+    #nst01, #nst02, #nst03, #nst04 {
+        width:90%;    
+    }
+    
+    /* section contacto */
+
+    #infocontacto2 {
+        height:100%; 
+        margin-top:0;
+    }    
+    #contacto3 {
+        float:none;
+        width:100%;
+        text-align:center;
+    }
+    #contacto4 {
+        display:block;
+        font-size:0.9em;
+        max-width:15em;
+        margin:auto;
+    }
+    #contacto4 p:nth-child(1):before,
+    #contacto4 p:nth-child(2):before {
+        width:1em;
+        height:3em;
+    }
+    #contacto4 p:last-child {
+        margin-bottom:0;
+        padding-bottom:2em;
+        padding-left:2em;
+    }
+    #infocontacto2 h1 {
+        font-size:1.1em;
+    }
+    
+	/* footer */
+    
+	footer p {
+		font-size:0.55em;	
+	}
+    
+}
