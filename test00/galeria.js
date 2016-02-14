@@ -32,34 +32,40 @@ Galeria = (function() {
      * Evento de click en mover la lista de previews a la izquierda
      */
     Galeria.prototype.evento_click_navegar_izquierda = function() {
-        var $contenedor = $("#barragaleria").width() - 1;  
-        var $barraPos = parseInt($("#barragaleria ul").css("margin-left"));
+        var self = evento.data.self;
+        var $contenedor = self.elemento_padre.find("#barragaleria").width() - 1;  
+        var $barraPos = parseInt(self.elemento_padre.find("#barragaleria ul").css("margin-left"));
         var $barraPositivo = $barraPos *= -1;  
         
         if($barraPositivo<$contenedor){
-            $("#barragaleria ul").stop().animate({marginLeft: 0}, 1000);           
+            self.elemento_padre.find("#barragaleria ul").stop().animate({marginLeft: 0}, 1000);           
         }
         if($barraPositivo>=$contenedor){            
-            $("#barragaleria ul").animate({marginLeft: "+=100%"}, 1000);
-            $("#barragaleria ul").clearQueue();
+            self.elemento_padre.find("#barragaleria ul").animate({marginLeft: "+=100%"}, 1000);
+            self.elemento_padre.find("#barragaleria ul").clearQueue();
         }                      
     };   
 
     /**
      * Evento de click en mover la lista de previews a la derecha
      */
-    Galeria.prototype.evento_click_navegar_derecha = function() {         
-        var $desplazamiento_habitual = $("#barragaleria").width();
-        var $posicion_actual = parseInt($("#barragaleria ul").css("margin-left"));
+    Galeria.prototype.evento_click_navegar_derecha = function(evento) {
+        var self = evento.data.self;
+        var $desplazamiento_habitual = self.elemento_padre.find("#barragaleria").width();
+        var $posicion_actual = parseInt(self.elemento_padre.find("#barragaleria ul").css("margin-left"));
         var $posicion_actual_positivo = $posicion_actual *= -1; 
+
+        // agregamos el tamano de los componentes
         var $maximo_desplazamiento = 0;
-        $("#barragaleria ul li").each(function(i, e){return $maximo_desplazamiento+=$(e).outerWidth(true);});
+        self.elemento_padre.find("#barragaleria ul li").each(function(i, e){
+            return $maximo_desplazamiento+=$(e).outerWidth(true);
+        });
         $maximo_desplazamiento = Math.max(0, $maximo_desplazamiento - $desplazamiento_habitual);
         
         
         var $desplazamiento = Math.min($desplazamiento_habitual, $maximo_desplazamiento - $posicion_actual_positivo);
-        $("#barragaleria ul").animate({marginLeft: "-=" + $desplazamiento}, 1000);
-        $("#barragaleria ul").clearQueue();
+        self.elemento_padre.find("#barragaleria ul").animate({marginLeft: "-=" + $desplazamiento}, 1000);
+        self.elemento_padre.find("#barragaleria ul").clearQueue();
     };
 
     Galeria.prototype.evento_click_preview = function(evento) {
@@ -84,8 +90,8 @@ Galeria = (function() {
 
     // Registra los eventos
     Galeria.prototype.registrar_eventos = function() {
-        this.elemento_padre.find("#nav1").click(this.evento_click_navegar_izquierda);
-        this.elemento_padre.find("#nav2").click(this.evento_click_navegar_derecha);
+        this.elemento_padre.find("#nav1").click({self: this}, this.evento_click_navegar_izquierda);
+        this.elemento_padre.find("#nav2").click({self: this}, this.evento_click_navegar_derecha);
         this.elemento_padre.find("li").click({self: this}, this.evento_click_preview);
         this.elemento_padre.find("li").hover(function(){
             $(this).stop().fadeTo("normal", 1);
