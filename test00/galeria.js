@@ -62,7 +62,8 @@ Galeria = (function() {
         $("#barragaleria ul").clearQueue();
     };
 
-    Galeria.prototype.evento_click_preview = function() {
+    Galeria.prototype.evento_click_preview = function(evento) {
+        var self = evento.data.self;
         var $this = $(this); //se almacena en la variable porque dentro del loop this se refiere al array, no al elemento del Dom
         var propLi = ["background-color"]//el array contiene la lista de propiedades que se van a coger del elemento seleccionada para luego guardarlas en la ventana principal
         //$.each(array, callback)
@@ -70,23 +71,14 @@ Galeria = (function() {
         $.each(propLi, function(index, value) {
            $("#ventanagaleria").css(value, $this.css(value)); //.css(propertyName, value)
         });
-        
-        var $a = $(this).index();
-        console.log($a);
-        $("li").each(function(i){
-            var $b = $(this).index();            
-            var $this = $(this).data("clicked");
-           
-            if($this){
-                if($a==$b){
-                    console.log("break");
-                    return false;
-                }
-                $(this).data("clicked", false);
-                $(this).fadeTo("normal", 0.3);
-            }
+
+        self.elemento_padre.find("li.activo").each(function() {
+            $(this).removeClass("activo");
+            $(this).fadeTo("normal", 0.3);
         });
-        $(this).data("clicked",true);
+       
+        $this.addClass("activo");
+        $this.fadeTo("normal", 1);
     };
 
 
@@ -94,12 +86,12 @@ Galeria = (function() {
     Galeria.prototype.registrar_eventos = function() {
         this.elemento_padre.find("#nav1").click(this.evento_click_navegar_izquierda);
         this.elemento_padre.find("#nav2").click(this.evento_click_navegar_derecha);
-        this.elemento_padre.find("li").click(this.evento_click_preview);
+        this.elemento_padre.find("li").click({self: this}, this.evento_click_preview);
         this.elemento_padre.find("li").hover(function(){
             $(this).stop().fadeTo("normal", 1);
         },function(){
             var $this = $(this);
-            if($this.data("clicked")){
+            if($this.hasClass("activo")){
                 return false;
             }else{
                 $(this).stop().fadeTo("normal", 0.3);
