@@ -1,4 +1,7 @@
-$(document).ready(function() {           
+
+
+
+$(document).ready(function() {        
     
     
     $("#nav1").click(function(){  
@@ -6,7 +9,7 @@ $(document).ready(function() {
         var $barraPos = parseInt($("#barragaleria ul").css("margin-left"));
         var $barraPositivo = $barraPos *= -1;  
         
-        alert($barraPositivo+ "  /  " +$contenedor)
+        console.log($barraPositivo+ "  /  " +$contenedor)
         if($barraPositivo<$contenedor){
             $("#barragaleria ul").stop().animate({marginLeft: 0}, 500);
             //alert($barraPositivo+ "  <  " +$contenedor);
@@ -23,10 +26,11 @@ $(document).ready(function() {
         var $desplazamiento_habitual = $("#barragaleria").width();
         var $posicion_actual = parseInt($("#barragaleria ul").css("margin-left"));
         var $posicion_actual_positivo = $posicion_actual *= -1; 
-        var $maximo_desplazamiento = $("#barragaleria ul").width();
-        $maximo_desplazamiento = $maximo_desplazamiento - $desplazamiento_habitual;
+        var $maximo_desplazamiento = 0;
+        $("#barragaleria ul li").each(function(i, e){return $maximo_desplazamiento+=$(e).outerWidth(true);});
+        $maximo_desplazamiento = Math.max(0, $maximo_desplazamiento - $desplazamiento_habitual);
         
-        alert($desplazamiento_habitual+ " / " +$posicion_actual_positivo+ " / " +$maximo_desplazamiento);
+        console.log($desplazamiento_habitual+ " / " +$posicion_actual_positivo+ " / " +$maximo_desplazamiento);
         
         var $desplazamiento = Math.min($desplazamiento_habitual, $maximo_desplazamiento - $posicion_actual_positivo);
         $("#barragaleria ul").animate({marginLeft: "-=" + $desplazamiento}, 1000);
