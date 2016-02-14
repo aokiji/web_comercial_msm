@@ -24,6 +24,8 @@ Galeria = (function() {
                 $("<div id='nav2'>")
             )
         );
+        $("#ventanagaleria").css("background-color", $("#barragaleria ul li").first().css("background-color"));
+        $("#barragaleria ul li").first().css("opacity",1).data("clicked",true);
     };
 
     /**
@@ -34,13 +36,10 @@ Galeria = (function() {
         var $barraPos = parseInt($("#barragaleria ul").css("margin-left"));
         var $barraPositivo = $barraPos *= -1;  
         
-        console.log($barraPositivo+ "  /  " +$contenedor)
         if($barraPositivo<$contenedor){
-            $("#barragaleria ul").stop().animate({marginLeft: 0}, 500);
-            //alert($barraPositivo+ "  <  " +$contenedor);
+            $("#barragaleria ul").stop().animate({marginLeft: 0}, 1000);           
         }
-        if($barraPositivo>=$contenedor){
-            //alert($barraPositivo+ "  >=  " +$contenedor);
+        if($barraPositivo>=$contenedor){            
             $("#barragaleria ul").animate({marginLeft: "+=100%"}, 1000);
             $("#barragaleria ul").clearQueue();
         }                      
@@ -57,7 +56,6 @@ Galeria = (function() {
         $("#barragaleria ul li").each(function(i, e){return $maximo_desplazamiento+=$(e).outerWidth(true);});
         $maximo_desplazamiento = Math.max(0, $maximo_desplazamiento - $desplazamiento_habitual);
         
-        console.log($desplazamiento_habitual+ " / " +$posicion_actual_positivo+ " / " +$maximo_desplazamiento);
         
         var $desplazamiento = Math.min($desplazamiento_habitual, $maximo_desplazamiento - $posicion_actual_positivo);
         $("#barragaleria ul").animate({marginLeft: "-=" + $desplazamiento}, 1000);
@@ -72,6 +70,23 @@ Galeria = (function() {
         $.each(propLi, function(index, value) {
            $("#ventanagaleria").css(value, $this.css(value)); //.css(propertyName, value)
         });
+        
+        var $a = $(this).index();
+        console.log($a);
+        $("li").each(function(i){
+            var $b = $(this).index();            
+            var $this = $(this).data("clicked");
+           
+            if($this){
+                if($a==$b){
+                    console.log("break");
+                    return false;
+                }
+                $(this).data("clicked", false);
+                $(this).fadeTo("normal", 0.5);
+            }
+        });
+        $(this).data("clicked",true);
     };
 
 
@@ -83,7 +98,12 @@ Galeria = (function() {
         this.elemento_padre.find("li").hover(function(){
             $(this).fadeTo("normal", 1);
         },function(){
-            $(this).fadeTo("normal", 0.5);
+            var $this = $(this);
+            if($this.data("clicked")){
+                return false;
+            }else{
+                $(this).fadeTo("normal", 0.5);
+            }
         });  
     };
 
