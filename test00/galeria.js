@@ -24,8 +24,8 @@ Galeria = (function() {
                 $("<div id='nav2'>")
             )
         );
-        $("#ventanagaleria").css("background-color", $("#barragaleria ul li").first().css("background-color"));
-        $("#barragaleria ul li").first().css("opacity",1).data("clicked",true);
+        this.elemento_padre.find("#ventanagaleria").css("background-color", this.elemento_padre.find("li").first().css("background-color"));
+        this.elemento_padre.find("li").first().css("opacity",1).data("clicked",true);
     };
 
     /**
@@ -83,7 +83,7 @@ Galeria = (function() {
                     return false;
                 }
                 $(this).data("clicked", false);
-                $(this).fadeTo("normal", 0.5);
+                $(this).fadeTo("normal", 0.3);
             }
         });
         $(this).data("clicked",true);
@@ -96,13 +96,13 @@ Galeria = (function() {
         this.elemento_padre.find("#nav2").click(this.evento_click_navegar_derecha);
         this.elemento_padre.find("li").click(this.evento_click_preview);
         this.elemento_padre.find("li").hover(function(){
-            $(this).fadeTo("normal", 1);
+            $(this).stop().fadeTo("normal", 1);
         },function(){
             var $this = $(this);
             if($this.data("clicked")){
                 return false;
             }else{
-                $(this).fadeTo("normal", 0.5);
+                $(this).stop().fadeTo("normal", 0.3);
             }
         });  
     };
