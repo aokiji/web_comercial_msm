@@ -9,24 +9,29 @@
         <link type="text/css" rel="stylesheet" href="estilos/mediaqueries.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,400" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,400italic" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="scripts/jquery-1.12.0.min.js"></script>
+        <script type="text/javascript" src="scripts/galeria.js"></script>
+        <script type="text/javascript" src="scripts/menu.js"></script>
 	</head>
 
 	<body>
     	<header> 
         	<div class="logo"></div>       	
         	<nav>
+                <div id="iconomenu"></div>
             	<div class="menu">
                 	<p><a href="index.html">Inicio</a></p>
                     <p><a href="servicios.html">Servicios</a></p>
                     <p><a href="nosotros.html">Nosotros</a></p>
                     <p><a href="galeria.html">Galería</a></p>
-                    <p><a href="contacto.html" style="color:white">Contacto</a></p>
+                    <p><a href="contacto.html" class="marcado">Contacto</a></p>
                 </div>
             </nav>
         </header>
         <section class="contenedor_contacto">
             <div class="descripcion">
                 <h1>Contacte con nosotros</h1>
+                <div class="arrow"></div>
             </div>
             <form id="formulario" action="enviar_email.php" method="post" enctype="multipart/form-data">
                 <div id="infoformulario1">
