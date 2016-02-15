@@ -56,7 +56,7 @@
 		width:40px;
 		height:40px;
 		position:absolute;
-		top:2%;
+		top:1.4em;
 		left:84%;
 	}
     #iconomenu:hover {
@@ -67,24 +67,23 @@
         position: absolute;
         right: 0em;
         margin-top: 5.25em;
-        width: 28%;
-        width: calc(20% + 60px);
-        background-color: white;  
+        width: 100%;   
+        background-color: white; 
+        line-height: 3em;
         display:none;
+        border-bottom: 2px solid darkgrey;
     }
 	.menu p {
-        display:block;
-        line-height: 1em;        
-        width: 90%;
-        margin: auto;
-        padding: 0;
-        padding-top: 1.5em;
-        padding-bottom: 1.5em;
-        border-bottom: 0.5px solid darkgrey;
+        display: inline-block;
+        line-height: 1.5em;
+        width: 19%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;        
+        border-right: 0.5px solid darkgrey;
 	}
     .menu p:last-child {
-        width:100%;
-        border-bottom: 2px solid darkgrey;
+        border-right: none;
     }
     a:hover {
         color: #F7931E;
@@ -333,8 +332,22 @@
     .menu {        
         position: relative;
         margin-top: 1.75em;
-        width: 100%;              
+        width: 100%; 
     }	
+    .menu p {
+        display:block;
+        line-height: 1em;        
+        width: 90%;
+        margin: auto;
+        padding: 0;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        border-bottom: 0.5px solid darkgrey;
+        border-right: none;
+    }
+    .menu p:last-child {
+        border-bottom: 
+    }
     a:hover {
         color: #F7931E;
     }
