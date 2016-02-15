@@ -64,7 +64,7 @@
     }
     .menu {
         z-index: 1;
-        position: fixed;
+        position: absolute;
         right: 0em;
         margin-top: 5.25em;
         width: 28%;
