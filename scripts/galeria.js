@@ -15,7 +15,9 @@ Galeria = (function() {
     Galeria.prototype.inicializar = function() {
         this.elemento_padre.empty();
         var lista_imagenes = $("<ul>");
-        $.each(this.imagenes, function(i, e) {lista_imagenes.append($("<li>"))});
+        $.each(this.imagenes, function(i, e) {
+            lista_imagenes.append($("<li>"))
+        });
         this.elemento_padre.append(
             $("<div id='ventanagaleria'>"),
             $("<div id='areanavegacion'>").append(
@@ -24,8 +26,13 @@ Galeria = (function() {
                 $("<div id='nav2'>")
             )
         );
-        this.elemento_padre.find("#ventanagaleria").css("background-color", this.elemento_padre.find("li").first().css("background-color"));
+        var $this = this.elemento_padre;
+        $.each(this.imagenes, function (i,e){
+            $this.find("li").eq(i).css("background-image","url("+e+")");
+        });
+        this.elemento_padre.find("#ventanagaleria").css("background-image", this.elemento_padre.find("li").first().css("background-image"));
         this.elemento_padre.find("li").first().css("opacity",1).addClass("activo");
+        
     };
 
     /**
@@ -71,7 +78,7 @@ Galeria = (function() {
     Galeria.prototype.evento_click_preview = function(evento) {
         var self = evento.data.self;
         var $this = $(this); 
-        var propLi = ["background-color"]
+        var propLi = ["background-image"]
         $.each(propLi, function(index, value) {
            $("#ventanagaleria").css(value, $this.css(value)); 
         });
@@ -108,6 +115,6 @@ Galeria = (function() {
 
 
 $(document).ready(function() {        
-    var imagenes = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""];
+    var imagenes = ["galeria/01.jpg", "galeria/02.jpg", "galeria/03.jpg", "galeria/04.jpg", "galeria/05.jpg", "galeria/06.jpg", "galeria/07.jpg", "galeria/08.jpg"];
     var galeria = new Galeria($(".galeria").first(), imagenes);
 });
