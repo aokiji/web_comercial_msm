@@ -19,7 +19,10 @@ Galeria = (function() {
             lista_imagenes.append($("<li>"))
         });
         this.elemento_padre.append(
-            $("<div id='ventanagaleria'>"),
+            $("<div id='contenedor_principal'>").append(
+                $("<div id='ventanagaleria'>"),
+                $("<div id='descripcion_galeria'>")
+            ),  
             $("<div id='areanavegacion'>").append(
                 $("<div id='nav1'>"),
                 $("<div id='barragaleria'>").append(lista_imagenes),
@@ -85,7 +88,7 @@ Galeria = (function() {
 
         self.elemento_padre.find("li.activo").each(function() {
             $(this).removeClass("activo");
-            $(this).stop().fadeTo("normal", 0.3);
+            $(this).stop().fadeTo("fast", 0.3);
         });
        
         $this.addClass("activo");
