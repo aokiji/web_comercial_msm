@@ -11,9 +11,8 @@ $mail->Subject = $_POST['asunto'];
 $mail->Body = $_POST['areadetexto'] . "\n\n---\nEnviado desde la web";
 
 if (!$mail->send()) {
-    echo 'No se pudo enviar el correo.';
-    echo $mail->ErrorInfo;
+    include 'correo_enviado_con_error.html';
 } else {
-    echo 'Todo ok';
+    include 'correo_enviado_con_exito.html';
 }
 
