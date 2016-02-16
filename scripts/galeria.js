@@ -21,13 +21,19 @@ Galeria = (function() {
         this.elemento_padre.append(
             $("<div id='contenedor_principal'>").append(
                 $("<div id='ventanagaleria'>"),
-                $("<div id='descripcion_galeria'>")
+                $("<div id='descripcion_galeria'>").append(
+                    $("<h1>¡Véalo usted mismo!</h1>"),
+                    $("<p>Nuestro esfuerzo y dedicación habla por sí solo. Este es el resultado de nuestros servicios: </p>"),
+                    $("<div id='texto_descripcion'>")
+                )
             ),  
-            $("<div id='areanavegacion'>").append(
-                $("<div id='nav1'>"),
-                $("<div id='barragaleria'>").append(lista_imagenes),
-                $("<div id='nav2'>")
-            )
+            $("<div id='contenedor_secundario'>").append(
+                $("<div id='areanavegacion'>").append(
+                    $("<div id='nav1'>"),
+                    $("<div id='barragaleria'>").append(lista_imagenes),
+                    $("<div id='nav2'>")
+                )
+            )            
         );
         var $this = this.elemento_padre;
         $.each(this.imagenes, function (i,e){
@@ -118,6 +124,6 @@ Galeria = (function() {
 
 
 $(document).ready(function() {        
-    var imagenes = ["galeria/01.jpg", "galeria/02.jpg", "galeria/03.jpg", "galeria/04.jpg", "galeria/05.jpg", "galeria/06.jpg", "galeria/07.jpg", "galeria/08.jpg"];
+    var imagenes = ["galeria/ejemplos/01.jpg", "galeria/ejemplos/02.jpg", "galeria/ejemplos/03.jpg", "galeria/ejemplos/04.jpg", "galeria/05.jpg", "galeria/06.jpg", "galeria/07.jpg", "galeria/08.jpg"];
     var galeria = new Galeria($(".galeria").first(), imagenes);
 });
