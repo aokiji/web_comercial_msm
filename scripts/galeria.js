@@ -39,7 +39,7 @@ Galeria = (function() {
         //Pasar urls a todos los li
         var $this = this.elemento_padre;
         $.each(this.imagenes, function (i,e){
-            $this.find("li").eq(i).css("background-image","url("+e['url']+")");
+            $this.find("li").eq(i).css("background-image","url("+e.url+")");
         });
         
         //Pasar valores del primer li a ventanagaleria al inicio
@@ -48,7 +48,7 @@ Galeria = (function() {
         
         //Pasar descripcion del primer li a texto_descripcion
         this.elemento_padre.find("#texto_descripcion").first().append(
-            $("<p>"+this.imagenes[0]['descripcion']+"</p>")
+            $("<p>"+this.imagenes[0].descripcion+"</p>")
         );
         
     };
@@ -110,7 +110,7 @@ Galeria = (function() {
         //Añadir y quitar descripciones
         self.elemento_padre.find("#texto_descripcion p").remove();        
         self.elemento_padre.find("#texto_descripcion").append(
-            $("<p>"+self.imagenes[$this.index()]['descripcion']+"</p>")
+            $("<p>"+self.imagenes[$this.index()].descripcion+"</p>")
         );
         
         //Añadir y quitar clase activo
