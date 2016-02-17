@@ -2,10 +2,9 @@ Galeria = (function() {
     /**
      * Constructor
      */
-    function Galeria(elemento_padre, imagenes, descripciones) {
+    function Galeria(elemento_padre, imagenes) {
         this.elemento_padre = $(elemento_padre);
         this.imagenes = imagenes; 
-        this.descripciones = descripciones;
         this.inicializar();
         this.registrar_eventos();
     }
@@ -40,7 +39,7 @@ Galeria = (function() {
         //Pasar urls a todos los li
         var $this = this.elemento_padre;
         $.each(this.imagenes, function (i,e){
-            $this.find("li").eq(i).css("background-image","url("+e+")");
+            $this.find("li").eq(i).css("background-image","url("+e['url']+")");
         });
         
         //Pasar valores del primer li a ventanagaleria al inicio
@@ -49,7 +48,7 @@ Galeria = (function() {
         
         //Pasar descripcion del primer li a texto_descripcion
         this.elemento_padre.find("#texto_descripcion").first().append(
-            $("<p>"+this.descripciones[0]+"</p>")
+            $("<p>"+this.imagenes[0]['descripcion']+"</p>")
         );
         
     };
@@ -108,7 +107,7 @@ Galeria = (function() {
         //Añadir y quitar descripciones
         self.elemento_padre.find("#texto_descripcion p").remove();        
         self.elemento_padre.find("#texto_descripcion").append(
-            $("<p>"+self.descripciones[$this.index()]+"</p>")
+            $("<p>"+self.imagenes[$this.index()]['descripcion']+"</p>")
         );
         
         //Añadir y quitar clase activo
@@ -144,7 +143,15 @@ Galeria = (function() {
 
 
 $(document).ready(function() {        
-    var imagenes = ["galeria/ejemplos/01.jpg", "galeria/ejemplos/02.jpg", "galeria/ejemplos/03.jpg", "galeria/ejemplos/04.jpg", "galeria/05.jpg", "galeria/06.jpg", "galeria/07.jpg", "galeria/08.jpg"];
-    var descripciones = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec varius urna. Sed vitae maximus eros. Ut venenatis vestibulum mollis. Suspendisse potenti. ","Cras nec imperdiet arcu, in maximus libero. Sed ut lorem at ex molestie aliquet nec eget nulla. Nullam vestibulum libero at ipsum laoreet, sit amet volutpat turpis convallis."," Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer interdum arcu lectus, ut euismod dolor varius vitae."," Pellentesque at vehicula sapien, sit amet sodales neque. Aenean semper tellus ac risus elementum cursus. ","Nam neque eros, aliquam tempus diam et, varius rutrum lorem. Phasellus a dolor eget erat ultrices mollis at vitae diam. Phasellus rhoncus leo nec ipsum rhoncus molestie vel eu est. ","Cras dui massa, fringilla non libero a, dictum imperdiet purus. Pellentesque mattis sapien luctus mollis interdum. ","Fusce sodales venenatis dictum. Vestibulum aliquam elit et sem tempus pellentesque sit amet vel nisi. ","Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam velit lacus, commodo tincidunt nunc a, placerat lobortis sapien."];
-    var galeria = new Galeria($(".galeria").first(), imagenes, descripciones);
+    var imagenes = [
+        {'url': "galeria/ejemplos/01.jpg", 'descripcion': "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec varius urna. Sed vitae maximus eros. Ut venenatis vestibulum mollis. Suspendisse potenti. "},
+        {'url': "galeria/ejemplos/02.jpg", 'descripcion': "Cras nec imperdiet arcu, in maximus libero. Sed ut lorem at ex molestie aliquet nec eget nulla. Nullam vestibulum libero at ipsum laoreet, sit amet volutpat turpis convallis."},
+        {'url': "galeria/ejemplos/03.jpg", 'descripcion': " Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer interdum arcu lectus, ut euismod dolor varius vitae."},
+        {'url': "galeria/ejemplos/04.jpg", 'descripcion': " Pellentesque at vehicula sapien, sit amet sodales neque. Aenean semper tellus ac risus elementum cursus. " },
+        {'url': "galeria/05.jpg", 'descripcion': "Nam neque eros, aliquam tempus diam et, varius rutrum lorem. Phasellus a dolor eget erat ultrices mollis at vitae diam. Phasellus rhoncus leo nec ipsum rhoncus molestie vel eu est. " },
+        {'url': "galeria/06.jpg", 'descripcion': "Cras dui massa, fringilla non libero a, dictum imperdiet purus. Pellentesque mattis sapien luctus mollis interdum. " },
+        {'url': "galeria/07.jpg", 'descripcion': "Fusce sodales venenatis dictum. Vestibulum aliquam elit et sem tempus pellentesque sit amet vel nisi. " },
+        {'url': "galeria/08.jpg", 'descripcion': "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam velit lacus, commodo tincidunt nunc a, placerat lobortis sapien."}
+    ];
+    var galeria = new Galeria($(".galeria").first(), imagenes);
 });
