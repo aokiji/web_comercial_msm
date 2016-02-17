@@ -265,6 +265,13 @@
         font-size:1.1em;
     }
     
+    #alerta_correo {
+        height:320px;
+        width:80%;  
+        max-width: 620px;
+        margin:auto;
+        margin-top:2em
+    }
 }
 
 
