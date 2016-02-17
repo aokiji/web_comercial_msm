@@ -2,9 +2,10 @@ Galeria = (function() {
     /**
      * Constructor
      */
-    function Galeria(elemento_padre, imagenes) {
+    function Galeria(elemento_padre, imagenes, descripciones) {
         this.elemento_padre = $(elemento_padre);
         this.imagenes = imagenes; 
+        this.descripciones = descripciones;
         this.inicializar();
         this.registrar_eventos();
     }
@@ -13,7 +14,7 @@ Galeria = (function() {
      * Inyecta en el dom los elementos necesarios para mostrar la galeria
      */
     Galeria.prototype.inicializar = function() {
-        this.elemento_padre.empty();
+        this.elemento_padre.empty();       
         var lista_imagenes = $("<ul>");
         $.each(this.imagenes, function(i, e) {
             lista_imagenes.append($("<li>"))
@@ -23,7 +24,7 @@ Galeria = (function() {
                 $("<div id='ventanagaleria'>"),
                 $("<div id='descripcion_galeria'>").append(
                     $("<h1>¡Véalo usted mismo!</h1>"),
-                    $("<p>Nuestro esfuerzo y dedicación habla por sí solo. Este es el resultado de nuestros servicios: </p> <p>Descripción:</p>"),
+                    $("<p>Nuestro esfuerzo y dedicación habla por sí solo. Éste es el resultado de nuestros servicios. </p> <p>Descripción:</p>"),
                     $("<div id='texto_descripcion'>")
                 )
             ),  
@@ -35,12 +36,21 @@ Galeria = (function() {
                 )
             )            
         );
+        
+        //Pasar urls a todos los li
         var $this = this.elemento_padre;
         $.each(this.imagenes, function (i,e){
             $this.find("li").eq(i).css("background-image","url("+e+")");
         });
+        
+        //Pasar valores del primer li a ventanagaleria al inicio
         this.elemento_padre.find("#ventanagaleria").css("background-image", this.elemento_padre.find("li").first().css("background-image"));
         this.elemento_padre.find("li").first().css("opacity",1).addClass("activo");
+        
+        //Pasar descripcion del primer li a texto_descripcion
+        this.elemento_padre.find("#texto_descripcion").first().append(
+            $("<p>"+this.descripciones[0]+"</p>")
+        );
         
     };
 
@@ -85,18 +95,28 @@ Galeria = (function() {
     };
 
     Galeria.prototype.evento_click_preview = function(evento) {
+        
         var self = evento.data.self;
         var $this = $(this); 
-        var propLi = ["background-image"]
+        
+        //Añadir valores de li a ventanagaleria
+        var propLi = ["background-image"];
         $.each(propLi, function(index, value) {
            $("#ventanagaleria").css(value, $this.css(value)); 
         });
-
+        
+        //Añadir y quitar descripciones
+        self.elemento_padre.find("#texto_descripcion p").remove();        
+        self.elemento_padre.find("#texto_descripcion").append(
+            $("<p>"+self.descripciones[$this.index()]+"</p>")
+        );
+        
+        //Añadir y quitar clase activo
         self.elemento_padre.find("li.activo").each(function() {
             $(this).removeClass("activo");
             $(this).stop().fadeTo("fast", 0.3);
         });
-       
+        
         $this.addClass("activo");
         $this.stop().fadeTo("normal", 1);
     };
@@ -125,5 +145,6 @@ Galeria = (function() {
 
 $(document).ready(function() {        
     var imagenes = ["galeria/ejemplos/01.jpg", "galeria/ejemplos/02.jpg", "galeria/ejemplos/03.jpg", "galeria/ejemplos/04.jpg", "galeria/05.jpg", "galeria/06.jpg", "galeria/07.jpg", "galeria/08.jpg"];
-    var galeria = new Galeria($(".galeria").first(), imagenes);
+    var descripciones = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec varius urna. Sed vitae maximus eros. Ut venenatis vestibulum mollis. Suspendisse potenti. ","Cras nec imperdiet arcu, in maximus libero. Sed ut lorem at ex molestie aliquet nec eget nulla. Nullam vestibulum libero at ipsum laoreet, sit amet volutpat turpis convallis."," Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer interdum arcu lectus, ut euismod dolor varius vitae."," Pellentesque at vehicula sapien, sit amet sodales neque. Aenean semper tellus ac risus elementum cursus. ","Nam neque eros, aliquam tempus diam et, varius rutrum lorem. Phasellus a dolor eget erat ultrices mollis at vitae diam. Phasellus rhoncus leo nec ipsum rhoncus molestie vel eu est. ","Cras dui massa, fringilla non libero a, dictum imperdiet purus. Pellentesque mattis sapien luctus mollis interdum. ","Fusce sodales venenatis dictum. Vestibulum aliquam elit et sem tempus pellentesque sit amet vel nisi. ","Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam velit lacus, commodo tincidunt nunc a, placerat lobortis sapien."];
+    var galeria = new Galeria($(".galeria").first(), imagenes, descripciones);
 });
