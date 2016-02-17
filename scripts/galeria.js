@@ -23,7 +23,7 @@ Galeria = (function() {
                 $("<div id='ventanagaleria'>"),
                 $("<div id='descripcion_galeria'>").append(
                     $("<h1>¡Véalo usted mismo!</h1>"),
-                    $("<p>Nuestro esfuerzo y dedicación habla por sí solo. Este es el resultado de nuestros servicios: </p>"),
+                    $("<p>Nuestro esfuerzo y dedicación habla por sí solo. Este es el resultado de nuestros servicios: </p> <p>Descripción:</p>"),
                     $("<div id='texto_descripcion'>")
                 )
             ),  

@@ -290,6 +290,19 @@
     #infocontacto2 h1 {
         font-size:1.1em;
     }
+
+    /* Section GALERIA */
+    
+    #ventanagaleria {   
+        width: 90%;        
+    }
+    #descripcion_galeria {
+        display: none;
+    }
+    #fondogaleria {
+        height: 600px;
+    }
+
     
     .alerta_correo {
         height:320px;
@@ -515,6 +528,20 @@
         font-size:1.1em;
     }
     
+    /* Section GALERIA */
+    #fondogaleria {
+        height: 70%;
+    }
+    #ventanagaleria {   
+        width: 100%; 
+        margin: 0;
+    }
+    #nav1, #nav2 {
+        width: 1.5em;
+    }
+    #areanavegacion {
+        width: 95%;
+    }
 	/* footer */
     
 	footer p {
