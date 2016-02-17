@@ -146,7 +146,7 @@ iframe {
     height:270px;    
 }
 /*----- ALERTA ------*/
-#alerta_correo {
+.alerta_correo {
     display: flex;
     height:180px;
     width:80%;  
@@ -154,6 +154,8 @@ iframe {
     margin:auto;
     margin-top:2em;
     margin-bottom: 20px;
+}
+#correo_ok {
     animation: pulse 4s forwards;
     -webkit-animation: pulse 4s forwards;
     -moz-animation: pulse 4s forwards;
@@ -168,11 +170,46 @@ iframe {
         background-color: #bff7d6;
     }
 }
-#alerta_correo p {
+#correo_ok p:before {
+    content: "";
+    background: url(iconos/ICOok.svg) no-repeat;
+    width: 2.5em;
+    height: 2em;
+    display: inline-block;
+    vertical-align: -45%;
+    margin-right: 0.3em;
+}
+#correo_wrong {
+    color: white;
+    animation: pulse2 4s forwards;
+    -webkit-animation: pulse2 4s forwards;
+    -moz-animation: pulse2 4s forwards;
+    -o-animation: pulse2 4s forwards;
+    overflow: hidden;
+}
+@keyframes pulse2 {
+    0% {
+        background-color: #ffffff;
+    }
+    100% {
+        background-color: #e3273d;
+    }
+}
+#correo_wrong p:before {
+    content: "";
+    background: url(iconos/ICOwrong.svg) no-repeat;
+    width: 2em;
+    height: 2em;
+    display: inline-block;
+    vertical-align: -45%;
+    margin-right: 0.3em;
+}
+.alerta_correo p {
     display: inline-block;
     font-size: 1.2em;
     text-align: center;
     margin: auto;
+    padding: 1em;
     animation: entrada 2s forwards ease-out;
     -webkit-animation: entrada 2s forwards ease-out;
     -moz-animation: entrada 2s forwards ease-out;
@@ -185,13 +222,4 @@ iframe {
     100% {
        opacity: 1;
     }
-}
-#alerta_correo p:before {
-    content: "";
-    background: url(iconos/ICOok.svg) no-repeat;
-    width: 2.5em;
-    height: 2em;
-    display: inline-block;
-    vertical-align: -45%;
-    margin-right: 0.3em;
 }

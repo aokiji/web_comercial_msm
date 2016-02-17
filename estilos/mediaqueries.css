@@ -265,7 +265,7 @@
         font-size:1.1em;
     }
     
-    #alerta_correo {
+    .alerta_correo {
         height:320px;
         width:80%;  
         max-width: 620px;
