@@ -54,7 +54,7 @@ Galeria = (function() {
     };
 
     /**
-     * Evento de click en mover la lista de previews a la izquierda
+     * Evento de click en mover la lista de vistas previas a la izquierda
      */
     Galeria.prototype.evento_click_navegar_izquierda = function(evento) {
         var self = evento.data.self;
@@ -72,7 +72,7 @@ Galeria = (function() {
     };   
 
     /**
-     * Evento de click en mover la lista de previews a la derecha
+     * Evento de click en mover la lista de vistas previas a la derecha
      */
     Galeria.prototype.evento_click_navegar_derecha = function(evento) {
         var self = evento.data.self;
@@ -93,7 +93,10 @@ Galeria = (function() {
         self.elemento_padre.find("#barragaleria ul").clearQueue();
     };
 
-    Galeria.prototype.evento_click_preview = function(evento) {
+    /**
+     * Evento cuando se hace click en la vista previa de una imagen
+     */
+    Galeria.prototype.evento_click_vista_previa = function(evento) {
         
         var self = evento.data.self;
         var $this = $(this); 
@@ -125,7 +128,7 @@ Galeria = (function() {
     Galeria.prototype.registrar_eventos = function() {
         this.elemento_padre.find("#nav1").click({self: this}, this.evento_click_navegar_izquierda);
         this.elemento_padre.find("#nav2").click({self: this}, this.evento_click_navegar_derecha);
-        this.elemento_padre.find("li").click({self: this}, this.evento_click_preview);
+        this.elemento_padre.find("li").click({self: this}, this.evento_click_vista_previa);
         this.elemento_padre.find("li").hover(function(){
             $(this).stop().fadeTo("normal", 1);
         },function(){
