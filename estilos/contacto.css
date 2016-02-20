@@ -42,6 +42,7 @@
     height:2em;    
     margin-top:0.3em;
     border-style:none;
+    cursor: pointer;
 }
 #infoformulario2 input:hover {
    background-color:#F7931E; 
