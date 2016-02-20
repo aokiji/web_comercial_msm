@@ -147,14 +147,17 @@ Galeria = (function() {
 
 $(document).ready(function() {        
     var imagenes = [
-        {'url': "galeria/ejemplos/01.jpg", 'descripcion': "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec varius urna. Sed vitae maximus eros. Ut venenatis vestibulum mollis. Suspendisse potenti. "},
-        {'url': "galeria/ejemplos/02.jpg", 'descripcion': "Cras nec imperdiet arcu, in maximus libero. Sed ut lorem at ex molestie aliquet nec eget nulla. Nullam vestibulum libero at ipsum laoreet, sit amet volutpat turpis convallis."},
-        {'url': "galeria/ejemplos/03.jpg", 'descripcion': " Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer interdum arcu lectus, ut euismod dolor varius vitae."},
-        {'url': "galeria/ejemplos/04.jpg", 'descripcion': " Pellentesque at vehicula sapien, sit amet sodales neque. Aenean semper tellus ac risus elementum cursus. " },
-        {'url': "galeria/05.jpg", 'descripcion': "Nam neque eros, aliquam tempus diam et, varius rutrum lorem. Phasellus a dolor eget erat ultrices mollis at vitae diam. Phasellus rhoncus leo nec ipsum rhoncus molestie vel eu est. " },
-        {'url': "galeria/06.jpg", 'descripcion': "Cras dui massa, fringilla non libero a, dictum imperdiet purus. Pellentesque mattis sapien luctus mollis interdum. " },
-        {'url': "galeria/07.jpg", 'descripcion': "Fusce sodales venenatis dictum. Vestibulum aliquam elit et sem tempus pellentesque sit amet vel nisi. " },
-        {'url': "galeria/08.jpg", 'descripcion': "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam velit lacus, commodo tincidunt nunc a, placerat lobortis sapien."}
+        {'url': "galeria/01.jpg", 'descripcion': "Reforma de cuarto de baño, cambio de bañera a plato de ducha con mampara. "},
+        {'url': "galeria/02.jpg", 'descripcion': "Armario de obra en pladur con puertas de madera adaptables."},
+        {'url': "galeria/03.jpg", 'descripcion': "Instalación de plato de ducha con mampara."},
+        {'url': "galeria/04.jpg", 'descripcion': "Instalación de mueble de baño con espejo y accesorios. " },
+        {'url': "galeria/05.jpg", 'descripcion': "Instalación de mueble de baño con espejo y accesorios. " },
+        {'url': "galeria/06.jpg", 'descripcion': "Instalación de caseta y totalizador de agua en comunidad de vecinos. " },
+        {'url': "galeria/07.jpg", 'descripcion': "Reforma de escaleras en piscina comunitaria. " },
+        {'url': "galeria/08.jpg", 'descripcion': "Instalación de oficina hecha en pladur en planta alta con ventanas de aluminio."}, 
+        {'url': "galeria/09.jpg", 'descripcion': "Escalera de acceso en hierro forjado."},
+        {'url': "galeria/10.jpg", 'descripcion': "Instalación de plato de ducha."},
+        {'url': "galeria/11.jpg", 'descripcion': "Instalación de placas solares en el exterior de un cortijo."}
     ];
     var galeria = new Galeria($(".galeria").first(), imagenes);
 });
