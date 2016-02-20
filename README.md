@@ -9,3 +9,9 @@ Para poner operativos los cambios
 ```shell
 rsync -av web_comercial/ --exclude '.git' multiser@multiservicioselmorche.es:public_html
 ```
+
+## Pendientes
+- Arreglar problemas de compatibilidad con Internet Explorer
+- Modificar la barra de desplazamiento de la galeria para que vaya al 90%
+- Subir fotos de antes y después
+ 
