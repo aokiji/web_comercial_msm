@@ -147,17 +147,17 @@ Galeria = (function() {
 
 $(document).ready(function() {        
     var imagenes = [
-        {'url': "galeria/01.jpg", 'descripcion': "Reforma de cuarto de baño, cambio de bañera a plato de ducha con mampara. "},
-        {'url': "galeria/02.jpg", 'descripcion': "Armario de obra en pladur con puertas de madera adaptables."},
-        {'url': "galeria/03.jpg", 'descripcion': "Instalación de plato de ducha con mampara."},
-        {'url': "galeria/04.jpg", 'descripcion': "Instalación de mueble de baño con espejo y accesorios. " },
-        {'url': "galeria/05.jpg", 'descripcion': "Instalación de mueble de baño con espejo y accesorios. " },
-        {'url': "galeria/06.jpg", 'descripcion': "Instalación de caseta y totalizador de agua en comunidad de vecinos. " },
-        {'url': "galeria/07.jpg", 'descripcion': "Reforma de escaleras en piscina comunitaria. " },
-        {'url': "galeria/08.jpg", 'descripcion': "Instalación de oficina hecha en pladur en planta alta con ventanas de aluminio."}, 
-        {'url': "galeria/09.jpg", 'descripcion': "Escalera de acceso en hierro forjado."},
-        {'url': "galeria/10.jpg", 'descripcion': "Instalación de plato de ducha."},
-        {'url': "galeria/11.jpg", 'descripcion': "Instalación de placas solares en el exterior de un cortijo."}
+        {'url': "/galeria/01.jpg", 'descripcion': "Reforma de cuarto de baño, cambio de bañera a plato de ducha con mampara. "},
+        {'url': "/galeria/02.jpg", 'descripcion': "Armario de obra en pladur con puertas de madera adaptables."},
+        {'url': "/galeria/03.jpg", 'descripcion': "Instalación de plato de ducha con mampara."},
+        {'url': "/galeria/04.jpg", 'descripcion': "Instalación de mueble de baño con espejo y accesorios. " },
+        {'url': "/galeria/05.jpg", 'descripcion': "Instalación de mueble de baño con espejo y accesorios. " },
+        {'url': "/galeria/06.jpg", 'descripcion': "Instalación de caseta y totalizador de agua en comunidad de vecinos. " },
+        {'url': "/galeria/07.jpg", 'descripcion': "Reforma de escaleras en piscina comunitaria. " },
+        {'url': "/galeria/08.jpg", 'descripcion': "Instalación de oficina hecha en pladur en planta alta con ventanas de aluminio."}, 
+        {'url': "/galeria/09.jpg", 'descripcion': "Escalera de acceso en hierro forjado."},
+        {'url': "/galeria/10.jpg", 'descripcion': "Instalación de plato de ducha."},
+        {'url': "/galeria/11.jpg", 'descripcion': "Instalación de placas solares en el exterior de un cortijo."}
     ];
     var galeria = new Galeria($(".galeria").first(), imagenes);
 });
