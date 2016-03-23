@@ -1,0 +1,107 @@
+{
+    "menu": {
+        "inicio": "Inicio",
+        "servicios": "Servicios",
+        "nosotros": "Nosotros",
+        "galeria": "Galería",
+        "contacto": "Contacto"
+    },
+    "inicio": {
+        "banner": {
+            "img01": {
+                "cadena1": "LOS AUTÉNTICOS PROFESIONALES",
+                "cadena2": "PARA TU HOGAR O EMPRESA"
+            },
+            "img02": {
+                "cadena1": "MÁS DE 20 AÑOS",
+                "cadena2": "TRABAJANDO EN LA AXARQUÍA"
+            },
+            "img03": {
+                "cadena1": "PEQUEÑOS O GRANDES PROYECTOS:",
+                "cadena2": "SOLUCIONES PARA TODO"
+            }
+        },
+        "footer": {
+            "cadena1": "SEGURIDAD",
+            "cadena2": "CALIDAD",
+            "cadena3": "CONFIANZA",
+            "cadena4": "¡NUESTRO COMPROMISO!"
+        }
+    },
+    "servicios": {
+        "titulo": "Nuestros servicios",
+        "reformas": {
+            "titulo": "Reformas",
+            "descripcion": "Modifique cualquier espacio a su gusto, nosotros nos encargamos de que todo quede como usted lo imagina."
+        },
+        "fontaneria": {
+            "titulo": "Fontanería",
+            "descripcion": "¿Problemas con el agua? No se preocupe, trabajamos todo tipo de instalaciones de fontanería."
+        },
+        "pintura": {
+            "titulo": "Pintura",
+            "descripcion": "Interior o exterior, redecore su vivienda del color que le gusta, vuelva a sentirla como el primer día."
+        },
+        "climatizacion": {
+            "titulo": "Climatización",
+            "descripcion": "Olvídese de los problemas del invierno y el verano. Le ayudaremos a acabar con el frio y el calor."
+        },
+        "electricidad": {
+            "titulo": "Electricidad",
+            "descripcion": "Alta o baja tensión, llámenos para cualquier tipo de instalación eléctrica que necesite reparar."
+        },
+        "piscinas": {
+            "titulo": "Piscinas",
+            "descripcion": "Deje el problema de mantener o reparar su piscina en nuestras manos, usted solo disfrútela."
+        },
+        "placas_solares": {
+            "titulo": "Placas solares",
+            "descripcion": "¿Quiere aprovechar la energía del sol? Nosotros le instalamos su placa solar."
+        },
+        "limpiezas": {
+            "titulo": "Limpiezas",
+            "descripcion": "Mantenga su hogar limpio cuando lo necesite, nuestro equipo experto en limpieza se encargará de todo."
+        }
+    },
+    "nosotros": {
+        "titulo": "Sobre nosotros",
+        "seccion1": {
+            "titulo": "Una empresa dedicada a nuestros clientes",
+            "descripcion": "Tenemos muy claro que hacemos las cosas para nuestros clientes, por eso nuestra filosofía es que siempre hemos de conseguir lo que se nos pide, y dar garantía por ello.  Tenemos una enorme carta de clientes, todos ellos satisfechos con nuestros servicios. "
+        },
+        "seccion2": {
+            "titulo": "Siempre a tiempo",
+            "descripcion": "Nos gusta cumplir tal y como prometemos, por eso nos esforzamos mucho en hacer las cosas bien hechas y en el plazo estipulado: la seriedad y responsabilidad van por delante. "
+        },
+        "seccion3": {
+            "titulo": "El mejor precio que podrá encontrar",
+            "descripcion": "Sabemos hacer las cosas, y sabemos cuánto cuestan realmente. Le daremos un presupuesto detallado para que pueda verlo, y le garantizamos que será el mejor precio que podrá encontrar: siempre ofrecemos un precio justo a todos nuestros clientes."
+        },
+        "seccion4": {
+            "titulo": "Calidad ante todo",
+            "descripcion": "Llevamos más de 20 años trabajando en toda la Axarquía, y desde el inicio nos hemos esforzado en lo mismo: mejorar los servicios para ofrecer los mejores resultados. Nuestra larga experiencia en el sector nos permite garantizar la calidad y excelencia de nuestro trabajo. "
+        }
+    },
+    "galeria": {
+        "titulo": "Galería de imágenes"
+    },
+    "contacto": {
+        "titulo": "Contacte con nosotros",
+        "formulario": {
+            "nombre": "Nombre",
+            "email": "E-Mail",
+            "asunto": "Asunto",
+            "aceptar": "ENVIAR",
+            "texto": "Escriba aquí su mensaje",
+            "resultado": {
+                "error": "Ha ocurrido un error en el envio del correo, por favor inténtelo más tarde.",
+                "ok": "El correo se ha enviado con exito, le contestaremos con la mayor brevedad posible."
+            }
+        },
+        "ubicacion": "O visite nuestra tienda",
+        "horario": {
+            "entre_semana": "Lunes a Viernes <br>09:00 a 13:30 <br>17:00 a 20:00",
+            "fines_de_semana": "Sábados <br>09:00 a 13:30"
+        }
+    }
+}
