@@ -19,19 +19,19 @@
 		100% {margin-left:-200%;}
 }
 #img01 {
-	background:url(imagenes/index01_1400.jpg) no-repeat;
+	background:url(/imagenes/index01_1400.jpg) no-repeat;
 	background-size:100% 100%;	
 	width:100%;
 	height:700px;	
 }
 #img02 {
-	background:url(imagenes/index02_1400.jpg) no-repeat;
+	background:url(/imagenes/index02_1400.jpg) no-repeat;
 	background-size:100% 100%;	
 	width:100%;
 	height:700px;	
 }
 #img03 {
-	background:url(imagenes/index03_1400.jpg) no-repeat;
+	background:url(/imagenes/index03_1400.jpg) no-repeat;
 	background-size:100% 100%;	
 	width:100%;
 	height:700px;	
@@ -87,17 +87,17 @@
 	padding-top:120px;	
 }
 #subindex01 {	
-	background:url(iconos/subindex01.svg) no-repeat;
+	background:url(/iconos/subindex01.svg) no-repeat;
 	background-size:160px 160px;
 	background-position:top;		
 }
 #subindex02 {	
-	background:url(iconos/subindex02.svg) no-repeat;
+	background:url(/iconos/subindex02.svg) no-repeat;
 	background-size:160px 160px;
 	background-position:top;		
 }
 #subindex03 {	
-	background:url(iconos/subindex03.svg) no-repeat;
+	background:url(/iconos/subindex03.svg) no-repeat;
 	background-size:160px 160px;
 	background-position:top;		
 }

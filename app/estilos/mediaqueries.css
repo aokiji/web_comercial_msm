@@ -16,13 +16,13 @@
 	}
     /* section index */    
 	#img01 {
-		background:url(imagenes/index01_900.jpg) no-repeat;
+		background:url(/imagenes/index01_900.jpg) no-repeat;
 	}
 	#img02 {
-		background:url(imagenes/index02_900.jpg) no-repeat;
+		background:url(/imagenes/index02_900.jpg) no-repeat;
 	}
 	#img03 {
-		background:url(imagenes/index03_900.jpg) no-repeat;
+		background:url(/imagenes/index03_900.jpg) no-repeat;
 	}
 	/* section index */
 	.contenedor_index h1 {
@@ -52,7 +52,7 @@
 		width:20%;	
 	}
 	#iconomenu {
-		background:url(iconos/desplegable.svg) no-repeat center;	
+		background:url(/iconos/desplegable.svg) no-repeat center;	
 		width:40px;
 		height:40px;
 		position:absolute;
@@ -105,15 +105,15 @@
 	/* section index */
     
 	#img01 {
-		background:url(imagenes/index01_768.jpg) no-repeat;
+		background:url(/imagenes/index01_768.jpg) no-repeat;
 		height:448px;
 	}
 	#img02 {
-		background:url(imagenes/index02_768.jpg) no-repeat;
+		background:url(/imagenes/index02_768.jpg) no-repeat;
 		height:448px;
 	}
 	#img03 {
-		background:url(imagenes/index03_768.jpg) no-repeat;
+		background:url(/imagenes/index03_768.jpg) no-repeat;
 		height:448px;
 	}
 	.contenedor_index {
@@ -474,10 +474,10 @@
         background-size:90%;        
     }
     #nosotros1 {
-        background-image:url(iconos/nst02.svg);
+        background-image:url(/iconos/nst02.svg);
     }
     #nosotros2 {
-        background-image:url(iconos/nst03.svg);
+        background-image:url(/iconos/nst03.svg);
     }
     .contenedor_nosotros h2, .contenedor_nosotros p{        
         padding-left:5%;

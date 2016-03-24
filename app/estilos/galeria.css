@@ -92,10 +92,10 @@ html, body {
     margin: 0 auto;
 }
 #nav1 {
-    background: url(iconos/ICOprevious.svg) no-repeat;
+    background: url(/iconos/ICOprevious.svg) no-repeat;
 }
 #nav2 {
-    background: url(iconos/ICOnext.svg) no-repeat;
+    background: url(/iconos/ICOnext.svg) no-repeat;
 }
 #nav1, #nav2 {
     background-position: center;
@@ -104,10 +104,10 @@ html, body {
     margin: auto;
 }
 #nav1:hover {
-    background: url(iconos/ICOprevious_hover.svg) no-repeat;
+    background: url(/iconos/ICOprevious_hover.svg) no-repeat;
 }
 #nav2:hover {
-    background: url(iconos/ICOnext_hover.svg) no-repeat;
+    background: url(/iconos/ICOnext_hover.svg) no-repeat;
 }
 #nav1:hover, #nav2:hover {
     background-position: center;   

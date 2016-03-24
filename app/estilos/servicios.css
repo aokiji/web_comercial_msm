@@ -34,28 +34,28 @@
 }
 
 #serv01 {
-    background:url(iconos/serv01.svg) no-repeat;  
+    background:url(/iconos/serv01.svg) no-repeat;  
 }
 #serv02 {
-    background:url(iconos/serv02.svg) no-repeat;  
+    background:url(/iconos/serv02.svg) no-repeat;  
 }
 #serv03 {
-    background:url(iconos/serv03.svg) no-repeat;  
+    background:url(/iconos/serv03.svg) no-repeat;  
 }
 #serv04 {
-    background:url(iconos/serv04.svg) no-repeat;  
+    background:url(/iconos/serv04.svg) no-repeat;  
 }
 #serv05 {
-    background:url(iconos/serv05.svg) no-repeat;  
+    background:url(/iconos/serv05.svg) no-repeat;  
 }
 #serv06 {
-    background:url(iconos/serv06.svg) no-repeat;  
+    background:url(/iconos/serv06.svg) no-repeat;  
 }
 #serv07 {
-    background:url(iconos/serv07.svg) no-repeat;  
+    background:url(/iconos/serv07.svg) no-repeat;  
 }
 #serv08 {
-    background:url(iconos/serv08.svg) no-repeat;  
+    background:url(/iconos/serv08.svg) no-repeat;  
 }
 #serv01, #serv02, #serv03, #serv04, #serv05, #serv06, #serv07, #serv08 {
     background-size:140px;
