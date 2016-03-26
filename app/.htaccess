@@ -1,3 +1,4 @@
 RedirectMatch ^/$ /es/
 RewriteEngine On
-RewriteRule ^.*/(.*).php$ /$1.php
+RewriteCond %{REQUEST_URI} !^/php/
+RewriteRule ^.*/(.*).php$ /php/$1.php [L]

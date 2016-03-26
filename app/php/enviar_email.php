@@ -11,8 +11,8 @@ $mail->Subject = $_POST['asunto'];
 $mail->Body = $_POST['areadetexto'] . "\n\n---\nEnviado desde la web";
 
 if (!$mail->send()) {
-    include $_POST['locale'] . '/correo_enviado_con_error.html';
+    include '../' . $_POST['locale'] . '/correo_enviado_con_error.html';
 } else {
-    include $_POST['locale'] . '/correo_enviado_con_exito.html';
+    include '../' . $_POST['locale'] . '/correo_enviado_con_exito.html';
 }
 
