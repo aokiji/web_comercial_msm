@@ -1,1 +1,3 @@
 RedirectMatch ^/$ /es/
+RewriteEngine On
+RewriteRule ^.*/(.*).php$ /$1.php

@@ -31,6 +31,7 @@
             </div>
             <form id="formulario" action="enviar_email.php" method="post" enctype="multipart/form-data">
                 <div id="infoformulario1">
+                    <input type="hidden" name="locale" value=${{i18n.locale}}$></input>
                     <label>${{i18n.contacto.formulario.nombre}}$</label><input name="nombre" type="text" size="35" required>
                     <label>${{i18n.contacto.formulario.email}}$</label><input name="mail" type="text" size="35" required>
                     <label>${{i18n.contacto.formulario.asunto}}$</label><input name="asunto" type="text" size="35"></div>
