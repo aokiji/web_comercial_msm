@@ -1,0 +1,107 @@
+{
+    "menu": {
+        "inicio": "Home",
+        "servicios": "Services",
+        "nosotros": "Meet Us",
+        "galeria": "Gallery",
+        "contacto": "Contact Us"
+    },
+    "inicio": {
+        "banner": {
+            "img01": {
+                "cadena1": "THE PROFESSIONALS YOU NEED",
+                "cadena2": "FOR YOU HOME OR WORKPLACE"
+            },
+            "img02": {
+                "cadena1": "MORE THAN 20 YEARS",
+                "cadena2": "WORKING IN ALL AXARQUÍA"
+            },
+            "img03": {
+                "cadena1": "SMALL OR BIG PROJECTS:",
+                "cadena2": "SOLUTIONS FOR ALL PROBLEMS"
+            }
+        },
+        "footer": {
+            "cadena1": "SECURITY",
+            "cadena2": "QUALITY",
+            "cadena3": "REALIABILITY",
+            "cadena4": "¡IN ALL WE DO!"
+        }
+    },
+    "servicios": {
+        "titulo": "Services we provide",
+        "reformas": {
+            "titulo": "Remodeling",
+            "descripcion": "Transform any place to your liking, we will handle it."
+        },
+        "fontaneria": {
+            "titulo": "Plumbing",
+            "descripcion": "Trouble with the pipes? Don't worry, we work on all types of plumbing setups."
+        },
+        "pintura": {
+            "titulo": "Painting",
+            "descripcion": "Interior and exterior, make your place over with the colour you want and see it as good as new."
+        },
+        "climatizacion": {
+            "titulo": "Air conditioning",
+            "descripcion": "Forget about winter and summer. Never feel hot and cold again."
+        },
+        "electricidad": {
+            "titulo": "Electricity",
+            "descripcion": "High and low voltaje, call us about any type of electricity setup you need repairs with."
+        },
+        "piscinas": {
+            "titulo": "Swimming Pools",
+            "descripcion": "You can leave swimming pool manteinance or repairing in our hands, you just worry about enjoying it."
+        },
+        "placas_solares": {
+            "titulo": "Solar Power",
+            "descripcion": "Do you want to take avantage of solar energy? We can install your solar panel."
+        },
+        "limpiezas": {
+            "titulo": "Cleaning",
+            "descripcion": "Keep your home clean, our expert cleaning crew will handle anything you need."
+        }
+    },
+    "nosotros": {
+        "titulo": "About us",
+        "seccion1": {
+            "titulo": "A company commited to our clients",
+            "descripcion": "We always have in mind that what we do is for our clients that's why we do our best to keep our clients happy. All our clients are very happy with our work and we are proud of it. "
+        },
+        "seccion2": {
+            "titulo": "Always on schedule",
+                "descripcion": "We work hard to deliver a quality service in a timely fashion "
+        },
+        "seccion3": {
+            "titulo": "Best price you can find",
+            "descripcion": "We know the business and we charge no more than what we offer. We will give you a detailed budget noone else could counteroffer: we always offer a fair price to all our clients."
+        },
+        "seccion4": {
+            "titulo": "Quality above all else",
+            "descripcion": "We have been working in all Axarquía for more than 20 years now, and since the beginning we have done the absolute best to improve the service we provide. Our long history in the business allows us to guarantee the quality and excellence of our work. "
+        }
+    },
+    "galeria": {
+        "titulo": "Image gallery"
+    },
+    "contacto": {
+        "titulo": "Contact us",
+        "formulario": {
+            "nombre": "Name",
+            "email": "E-Mail",
+            "asunto": "Subject",
+            "aceptar": "SEND",
+            "texto": "Your message here",
+            "resultado": {
+                "error": "There's been an error with your request, please try again later.",
+                "ok": "Message sent successfull, we will get back to you as soon as possible."
+            }
+        },
+        "ubicacion": "Or visit our office",
+        "horario": {
+            "entre_semana": "Mondays to Fridays <br>09:00 to 13:30 <br>17:00 to 20:00",
+            "fines_de_semana": "Saturday <br>09:00 to 13:30"
+        }
+    }
+}
