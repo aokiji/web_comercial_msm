@@ -84,7 +84,12 @@
         }
     },
     "galeria": {
-        "titulo": "Image gallery"
+        "titulo": "Image gallery",
+        "descripcion": {
+            "titulo": "See for your self",
+            "subtitulo": "Description:",
+            "texto": "Our effort and dedication speaks for it self. This is the outcome of it."
+        }
     },
     "contacto": {
         "titulo": "Contact us",

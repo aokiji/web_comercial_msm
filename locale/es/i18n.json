@@ -84,7 +84,12 @@
         }
     },
     "galeria": {
-        "titulo": "Galería de imágenes"
+        "titulo": "Galería de imágenes",
+        "descripcion": {
+            "titulo": "¡Véalo usted mismo!",
+            "subtitulo": "Descripción:",
+            "texto": "Nuestro esfuerzo y dedicación habla por sí solo. Éste es el resultado de nuestros servicios." 
+        }
     },
     "contacto": {
         "titulo": "Contacte con nosotros",

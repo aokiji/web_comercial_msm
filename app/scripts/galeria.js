@@ -13,44 +13,47 @@ Galeria = (function() {
      * Inyecta en el dom los elementos necesarios para mostrar la galeria
      */
     Galeria.prototype.inicializar = function() {
-        this.elemento_padre.empty();       
-        var lista_imagenes = $("<ul>");
-        $.each(this.imagenes, function(i, e) {
-            lista_imagenes.append($("<li>"))
+        var self = this;
+        $.getJSON("i18n.json", function(i18n) {
+            self.elemento_padre.empty();       
+            var lista_imagenes = $("<ul>");
+            $.each(self.imagenes, function(i, e) {
+                lista_imagenes.append($("<li>"))
+            });
+            self.elemento_padre.append(
+                $("<div id='contenedor_principal'>").append(
+                    $("<div id='ventanagaleria'>"),
+                    $("<div id='descripcion_galeria'>").append(
+                        $("<h1>").text(i18n.descripcion.titulo),
+                        $("<p>").text(i18n.descripcion.texto),
+                        $("<p>").text(i18n.descripcion.subtitulo),
+                        $("<div id='texto_descripcion'>")
+                    )
+                ),  
+                $("<div id='contenedor_secundario'>").append(
+                    $("<div id='areanavegacion'>").append(
+                        $("<div id='nav1'>"),
+                        $("<div id='barragaleria'>").append(lista_imagenes),
+                        $("<div id='nav2'>")
+                    )
+                )            
+            );
+            
+            //Pasar urls a todos los li
+            var $self = self.elemento_padre;
+            $.each(self.imagenes, function (i,e){
+                $self.find("li").eq(i).css("background-image","url("+e.url+")");
+            });
+            
+            //Pasar valores del primer li a ventanagaleria al inicio
+            self.elemento_padre.find("#ventanagaleria").css("background-image", self.elemento_padre.find("li").first().css("background-image"));
+            self.elemento_padre.find("li").first().css("opacity",1).addClass("activo");
+            
+            //Pasar descripcion del primer li a texto_descripcion
+            self.elemento_padre.find("#texto_descripcion").first().append(
+                $("<p>"+self.imagenes[0].descripcion+"</p>")
+            );
         });
-        this.elemento_padre.append(
-            $("<div id='contenedor_principal'>").append(
-                $("<div id='ventanagaleria'>"),
-                $("<div id='descripcion_galeria'>").append(
-                    $("<h1>¡Véalo usted mismo!</h1>"),
-                    $("<p>Nuestro esfuerzo y dedicación habla por sí solo. Éste es el resultado de nuestros servicios. </p> <p>Descripción:</p>"),
-                    $("<div id='texto_descripcion'>")
-                )
-            ),  
-            $("<div id='contenedor_secundario'>").append(
-                $("<div id='areanavegacion'>").append(
-                    $("<div id='nav1'>"),
-                    $("<div id='barragaleria'>").append(lista_imagenes),
-                    $("<div id='nav2'>")
-                )
-            )            
-        );
-        
-        //Pasar urls a todos los li
-        var $this = this.elemento_padre;
-        $.each(this.imagenes, function (i,e){
-            $this.find("li").eq(i).css("background-image","url("+e.url+")");
-        });
-        
-        //Pasar valores del primer li a ventanagaleria al inicio
-        this.elemento_padre.find("#ventanagaleria").css("background-image", this.elemento_padre.find("li").first().css("background-image"));
-        this.elemento_padre.find("li").first().css("opacity",1).addClass("activo");
-        
-        //Pasar descripcion del primer li a texto_descripcion
-        this.elemento_padre.find("#texto_descripcion").first().append(
-            $("<p>"+this.imagenes[0].descripcion+"</p>")
-        );
-        
     };
 
     /**
@@ -147,17 +150,17 @@ Galeria = (function() {
 
 $(document).ready(function() {        
     var imagenes = [
-        {'url': "/galeria/01.jpg", 'descripcion': "Reforma de cuarto de baño, cambio de bañera a plato de ducha con mampara. "},
-        {'url': "/galeria/02.jpg", 'descripcion': "Armario de obra en pladur con puertas de madera adaptables."},
-        {'url': "/galeria/03.jpg", 'descripcion': "Instalación de plato de ducha con mampara."},
-        {'url': "/galeria/04.jpg", 'descripcion': "Instalación de mueble de baño con espejo y accesorios. " },
-        {'url': "/galeria/05.jpg", 'descripcion': "Instalación de mueble de baño con espejo y accesorios. " },
-        {'url': "/galeria/06.jpg", 'descripcion': "Instalación de caseta y totalizador de agua en comunidad de vecinos. " },
-        {'url': "/galeria/07.jpg", 'descripcion': "Reforma de escaleras en piscina comunitaria. " },
-        {'url': "/galeria/08.jpg", 'descripcion': "Instalación de oficina hecha en pladur en planta alta con ventanas de aluminio."}, 
-        {'url': "/galeria/09.jpg", 'descripcion': "Escalera de acceso en hierro forjado."},
-        {'url': "/galeria/10.jpg", 'descripcion': "Instalación de plato de ducha."},
-        {'url': "/galeria/11.jpg", 'descripcion': "Instalación de placas solares en el exterior de un cortijo."}
+        {'url': "/imagenes/galeria/01.jpg", 'descripcion': "Reforma de cuarto de baño, cambio de bañera a plato de ducha con mampara. "},
+        {'url': "/imagenes/galeria/02.jpg", 'descripcion': "Armario de obra en pladur con puertas de madera adaptables."},
+        {'url': "/imagenes/galeria/03.jpg", 'descripcion': "Instalación de plato de ducha con mampara."},
+        {'url': "/imagenes/galeria/04.jpg", 'descripcion': "Instalación de mueble de baño con espejo y accesorios. " },
+        {'url': "/imagenes/galeria/05.jpg", 'descripcion': "Instalación de mueble de baño con espejo y accesorios. " },
+        {'url': "/imagenes/galeria/06.jpg", 'descripcion': "Instalación de caseta y totalizador de agua en comunidad de vecinos. " },
+        {'url': "/imagenes/galeria/07.jpg", 'descripcion': "Reforma de escaleras en piscina comunitaria. " },
+        {'url': "/imagenes/galeria/08.jpg", 'descripcion': "Instalación de oficina hecha en pladur en planta alta con ventanas de aluminio."}, 
+        {'url': "/imagenes/galeria/09.jpg", 'descripcion': "Escalera de acceso en hierro forjado."},
+        {'url': "/imagenes/galeria/10.jpg", 'descripcion': "Instalación de plato de ducha."},
+        {'url': "/imagenes/galeria/11.jpg", 'descripcion': "Instalación de placas solares en el exterior de un cortijo."}
     ];
     var galeria = new Galeria($(".galeria").first(), imagenes);
 });
