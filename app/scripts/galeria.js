@@ -6,7 +6,6 @@ Galeria = (function() {
         this.elemento_padre = $(elemento_padre);
         this.imagenes = imagenes; 
         this.inicializar();
-        this.registrar_eventos();
     }
 
     /**
@@ -15,6 +14,7 @@ Galeria = (function() {
     Galeria.prototype.inicializar = function() {
         var self = this;
         $.getJSON("i18n.json", function(i18n) {
+            self.i18n = i18n;
             self.elemento_padre.empty();       
             var lista_imagenes = $("<ul>");
             $.each(self.imagenes, function(i, e) {
@@ -51,8 +51,10 @@ Galeria = (function() {
             
             //Pasar descripcion del primer li a texto_descripcion
             self.elemento_padre.find("#texto_descripcion").first().append(
-                $("<p>"+self.imagenes[0].descripcion+"</p>")
+                $("<p>"+i18n.imagenes[self.imagenes[0].url]+"</p>")
             );
+
+            self.registrar_eventos();
         });
     };
 
@@ -113,7 +115,7 @@ Galeria = (function() {
         //Añadir y quitar descripciones
         self.elemento_padre.find("#texto_descripcion p").remove();        
         self.elemento_padre.find("#texto_descripcion").append(
-            $("<p>"+self.imagenes[$this.index()].descripcion+"</p>")
+            $("<p>"+self.i18n.imagenes[self.imagenes[$this.index()].url]+"</p>")
         );
         
         //Añadir y quitar clase activo
@@ -150,8 +152,8 @@ Galeria = (function() {
 
 $(document).ready(function() {        
     var imagenes = [
-        {'url': "/imagenes/galeria/01.jpg", 'descripcion': "Reforma de cuarto de baño, cambio de bañera a plato de ducha con mampara. "},
-        {'url': "/imagenes/galeria/02.jpg", 'descripcion': "Armario de obra en pladur con puertas de madera adaptables."},
+        {'url': "/imagenes/galeria/01.jpg"},
+        {'url': "/imagenes/galeria/02.jpg", 'descripcion': ""},
         {'url': "/imagenes/galeria/03.jpg", 'descripcion': "Instalación de plato de ducha con mampara."},
         {'url': "/imagenes/galeria/04.jpg", 'descripcion': "Instalación de mueble de baño con espejo y accesorios. " },
         {'url': "/imagenes/galeria/05.jpg", 'descripcion': "Instalación de mueble de baño con espejo y accesorios. " },
