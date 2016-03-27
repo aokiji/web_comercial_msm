@@ -153,16 +153,16 @@ Galeria = (function() {
 $(document).ready(function() {        
     var imagenes = [
         {'url': "/imagenes/galeria/01.jpg"},
-        {'url': "/imagenes/galeria/02.jpg", 'descripcion': ""},
-        {'url': "/imagenes/galeria/03.jpg", 'descripcion': "Instalación de plato de ducha con mampara."},
-        {'url': "/imagenes/galeria/04.jpg", 'descripcion': "Instalación de mueble de baño con espejo y accesorios. " },
-        {'url': "/imagenes/galeria/05.jpg", 'descripcion': "Instalación de mueble de baño con espejo y accesorios. " },
-        {'url': "/imagenes/galeria/06.jpg", 'descripcion': "Instalación de caseta y totalizador de agua en comunidad de vecinos. " },
-        {'url': "/imagenes/galeria/07.jpg", 'descripcion': "Reforma de escaleras en piscina comunitaria. " },
-        {'url': "/imagenes/galeria/08.jpg", 'descripcion': "Instalación de oficina hecha en pladur en planta alta con ventanas de aluminio."}, 
-        {'url': "/imagenes/galeria/09.jpg", 'descripcion': "Escalera de acceso en hierro forjado."},
-        {'url': "/imagenes/galeria/10.jpg", 'descripcion': "Instalación de plato de ducha."},
-        {'url': "/imagenes/galeria/11.jpg", 'descripcion': "Instalación de placas solares en el exterior de un cortijo."}
+        {'url': "/imagenes/galeria/02.jpg"},
+        {'url': "/imagenes/galeria/03.jpg"},
+        {'url': "/imagenes/galeria/04.jpg"},
+        {'url': "/imagenes/galeria/05.jpg"},
+        {'url': "/imagenes/galeria/06.jpg"},
+        {'url': "/imagenes/galeria/07.jpg"},
+        {'url': "/imagenes/galeria/08.jpg"}, 
+        {'url': "/imagenes/galeria/09.jpg"},
+        {'url': "/imagenes/galeria/10.jpg"},
+        {'url': "/imagenes/galeria/11.jpg"}
     ];
     var galeria = new Galeria($(".galeria").first(), imagenes);
 });
