@@ -7,7 +7,7 @@ Hay disponible un proyecto [docker_web_comercial_msm](https://github.com/aokiji/
 Para poner operativos los cambios
 
 ```shell
-rsync -av web_comercial/ --exclude '.git' multiser@multiservicioselmorche.es:public_html
+rsync -av web_comercial/public_html/ --exclude '.git' multiser@multiservicioselmorche.es:public_html
 ```
 
 ## Pendientes
