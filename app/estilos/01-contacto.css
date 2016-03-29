@@ -1,7 +1,6 @@
 .contenedor_contacto {
     background-color:white;
     width:100%;
-    height:100%;
 }
 
 /* formulario */
@@ -77,14 +76,14 @@
 }
 #contacto1:before {
     content:"";
-    background:url(/iconos/info01.svg) no-repeat;
+    background:url(../iconos/info01.svg) no-repeat;
     width:5em;
     height:5em;
     float:left;
 }
 #contacto2:before {
     content:"";
-    background:url(/iconos/info02.svg) no-repeat;
+    background:url(../iconos/info02.svg) no-repeat;
     width:5em;
     height:5em;
     float:left;
@@ -120,7 +119,7 @@
 
 #contacto4 p:nth-child(1):before {
     content:"";
-    background:url(/iconos/info03.svg) no-repeat;    
+    background:url(../iconos/info03.svg) no-repeat;    
     width:1.5em;
     height:2em;
     float:left;
@@ -129,7 +128,7 @@
 }
 #contacto4 p:nth-child(2):before {
     content:"";
-    background:url(/iconos/info04.svg) no-repeat;
+    background:url(../iconos/info04.svg) no-repeat;
     background-size:80%;
     padding-right:1em;
     width:1.5em;
@@ -173,7 +172,7 @@ iframe {
 }
 #correo_ok p:before {
     content: "";
-    background: url(/iconos/ICOok.svg) no-repeat;
+    background: url(../iconos/ICOok.svg) no-repeat;
     width: 2.5em;
     height: 2em;
     display: inline-block;
@@ -198,7 +197,7 @@ iframe {
 }
 #correo_wrong p:before {
     content: "";
-    background: url(/iconos/ICOwrong.svg) no-repeat;
+    background: url(../iconos/ICOwrong.svg) no-repeat;
     width: 2em;
     height: 2em;
     display: inline-block;
