@@ -9,15 +9,15 @@ body {
 body, html {
     height: 100%;
 }
-a {	
+a {
 	text-decoration:none;
-	color:#333333;	
+	color:#333333;
 }
 a:hover {
-	color:white;	
+	color:white;
 }
 .menu, .contenedor_index, .contenedor_subindex, .descripcion, footer {
-	font-family:"Roboto", sans-serif;	
+	font-family:"Roboto", sans-serif;
 }
 #subcontenedor_nosotros, .contenedor_contacto, #formulario textarea {
     font-family:"Open sans", sans-serif;
@@ -42,20 +42,20 @@ a:hover {
     border-top:15px solid #4D4D4D;
     border-left:15px solid transparent;
     border-right:15px solid transparent;
-    margin-left: 30%;  
+    margin-left: 30%;
 }
 /*------- HEADER --------------*/
 header {
 	width:100%;
 	height:100px;
-	background-color:white;	
+	background-color:white;
 	border-bottom:0.3em solid #333333;
 	margin:0;
 }
-.logo {	
-	background:url(../iconos/logo01.svg) no-repeat center;	
+.logo {
+	background:url(../iconos/logo01.svg) no-repeat center;
 	height:80%;
-	width:35%;	
+	width:35%;
 	float:left;
 	margin-top:10px;
 	margin-left:2%;
@@ -65,18 +65,18 @@ nav {
 	height:0px;
 	float:right;
 	/*para hacer el trapecio*/
-	border-left:60px solid transparent;	
-	border-bottom: 100px solid #F7931E;			
+	border-left:60px solid transparent;
+	border-bottom: 100px solid #F7931E;
 }
-.menu {	
+.menu {
 	/*para centrar el contenido horizontal y verticalmente*/
-	line-height:100px; 
+	line-height:100px;
 	text-align:center;
 	margin:0;
 }
 .menu p {
 	display:inline;
-	padding:2.9%;		
+	padding:2.9%;
 	font-weight:300;
 	font-size:1.4em;
 }
@@ -93,7 +93,7 @@ footer {
 	height:70px;
 }
 footer p {
-	margin:0;	
+	margin:0;
 	line-height:70px;
 	font-size:0.8em;
     font-weight:300;
