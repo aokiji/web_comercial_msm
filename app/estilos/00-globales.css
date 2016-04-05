@@ -68,17 +68,48 @@ nav {
 	border-left:60px solid transparent;
 	border-bottom: 100px solid #F7931E;
 }
+li{
+    list-style-type: none;
+}
 .menu {
 	/*para centrar el contenido horizontal y verticalmente*/
 	line-height:100px;
-	text-align:center;
 	margin:0;
+    text-align: center;
 }
-.menu p {
+.menu li{
 	display:inline;
-	padding:2.9%;
+    padding: 0 0.5em 0 0.5em;
 	font-weight:300;
 	font-size:1.4em;
+}
+.menu li:last-child {
+    padding: 0;
+}
+#menu_lenguaje {
+    display: inline-flex;
+    flex-flow: column;
+    position: relative;
+    padding: 0;
+    line-height: 2em;
+}
+
+#lenguaje{
+    border: 2px solid white;
+    color: white;
+}
+#lenguaje:hover {
+    cursor: pointer;
+}
+#menu_lenguaje .submenu{
+    background-color: white;
+    display: none;
+}
+#menu_lenguaje .submenu:hover {
+    background-color: #edf9ff;
+}
+.submenu a:hover{
+    color: #F7931E;
 }
 .marcado {
     color:white

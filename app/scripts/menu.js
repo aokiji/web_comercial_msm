@@ -1,5 +1,8 @@
 $(document).ready(function(){
-    $("#iconomenu").click(function(){        
-        $(".menu").stop().animate({height: "toggle"}, 800);        
+  $("#lenguaje").click(function(){
+       $(".submenu").stop().animate({height: "toggle"}, 500);
+    });
+    $("#iconomenu").click(function(){
+        $(".menu").stop().animate({height: "toggle"}, 800);
     });
 });
