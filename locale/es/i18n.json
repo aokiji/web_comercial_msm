@@ -5,7 +5,10 @@
         "servicios": "Servicios",
         "nosotros": "Nosotros",
         "galeria": "Galería",
-        "contacto": "Contacto"
+        "contacto": "Contacto",
+        "Es": "Es",
+        "En": "En",
+        "De": "De"
     },
     "inicio": {
         "banner": {
@@ -88,7 +91,7 @@
         "descripcion": {
             "titulo": "¡Véalo usted mismo!",
             "subtitulo": "Descripción:",
-            "texto": "Nuestro esfuerzo y dedicación habla por sí solo. Éste es el resultado de nuestros servicios." 
+            "texto": "Nuestro esfuerzo y dedicación habla por sí solo. Éste es el resultado de nuestros servicios."
         },
         "imagenes": {
             "/imagenes/galeria/01.jpg": "Reforma de cuarto de baño, cambio de bañera a plato de ducha con mampara.",
@@ -98,7 +101,7 @@
             "/imagenes/galeria/05.jpg": "Instalación de mueble de baño con espejo y accesorios. " ,
             "/imagenes/galeria/06.jpg": "Instalación de caseta y totalizador de agua en comunidad de vecinos. " ,
             "/imagenes/galeria/07.jpg": "Reforma de escaleras en piscina comunitaria. " ,
-            "/imagenes/galeria/08.jpg": "Instalación de oficina hecha en pladur en planta alta con ventanas de aluminio.", 
+            "/imagenes/galeria/08.jpg": "Instalación de oficina hecha en pladur en planta alta con ventanas de aluminio.",
             "/imagenes/galeria/09.jpg": "Escalera de acceso en hierro forjado.",
             "/imagenes/galeria/10.jpg": "Instalación de plato de ducha.",
             "/imagenes/galeria/11.jpg": "Instalación de placas solares en el exterior de un cortijo."

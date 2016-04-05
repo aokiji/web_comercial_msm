@@ -5,7 +5,10 @@
         "servicios": "Services",
         "nosotros": "Meet Us",
         "galeria": "Gallery",
-        "contacto": "Contact Us"
+        "contacto": "Contact Us",
+        "Es": "En",
+        "En": "Es",
+        "De": "De"
     },
     "inicio": {
         "banner": {
@@ -98,7 +101,7 @@
             "/imagenes/galeria/05.jpg": "Installation of a bathroom cabinet with mirror and accessories. " ,
             "/imagenes/galeria/06.jpg": "Installation of water units in neighbours community. " ,
             "/imagenes/galeria/07.jpg": "Remodelling of stairs in a community swimming pool. " ,
-            "/imagenes/galeria/08.jpg": "Installation of a plasterboard office at an upper story with aluminum windows.", 
+            "/imagenes/galeria/08.jpg": "Installation of a plasterboard office at an upper story with aluminum windows.",
             "/imagenes/galeria/09.jpg": "Access stairs using forged iron.",
             "/imagenes/galeria/10.jpg": "Installation of a shower.",
             "/imagenes/galeria/11.jpg": "Installation of solar panels."
