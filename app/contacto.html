@@ -11,17 +11,22 @@
 	</head>
 
 	<body>
-    	<header> 
-        	<div class="logo"></div>       	
+    	<header>
+        	<div class="logo"></div>
         	<nav>
                 <div id="iconomenu"></div>
-            	<div class="menu">
-                    <p><a href="index.html">${{i18n.menu.inicio}}$</a></p>
-                    <p><a href="servicios.html">${{i18n.menu.servicios}}$</a></p>
-                    <p><a href="nosotros.html">${{i18n.menu.nosotros}}$</a></p>
-                    <p><a href="galeria.html">${{i18n.menu.galeria}}$</a></p>
-                    <p><a href="contacto.html" class="marcado">${{i18n.menu.contacto}}$</a></p>
-                </div>
+								<ul class="menu">
+										<li><a href="index.html">${{i18n.menu.inicio}}$</a></li>
+											<li><a href="servicios.html">${{i18n.menu.servicios}}$</a></li>
+											<li><a href="nosotros.html">${{i18n.menu.nosotros}}$</a></li>
+											<li><a href="galeria.html">${{i18n.menu.galeria}}$</a></li>
+											<li><a href="contacto.html" class="marcado">${{i18n.menu.contacto}}$</a></li>
+											<ul id="menu_lenguaje">
+													<li id="lenguaje">Es</li>
+													<li class="submenu"><a href="http://multiservicioselmorche.es/en">En</a></li>
+													<li class="submenu"><a href="http://multiservicioselmorche.es/de">De</a></li>
+											</ul>
+								</ul>
             </nav>
         </header>
         <section class="contenedor_contacto">
@@ -37,16 +42,16 @@
                     <label>${{i18n.contacto.formulario.asunto}}$</label><input name="asunto" type="text" size="35"></div>
                 <div id="infoformulario2">
                     <textarea name="areadetexto" required>${{i18n.contacto.formulario.texto}}$</textarea>
-                    <input id="enviar" name="ok" type="submit" value="${{i18n.contacto.formulario.aceptar}}$"></div>               
+                    <input id="enviar" name="ok" type="submit" value="${{i18n.contacto.formulario.aceptar}}$"></div>
             </form>
             <div id="infocontacto1">
                 <div id="contacto1"><p>952 968 184<br>600 621 857</p></div>
                 <div id="contacto2"><p>tienda@multiservicioselmorche.es<br>delossantosvh@hotmail.com</p></div>
-            </div> 
+            </div>
             <div id="infocontacto2">
-                <div id="subcontenedor_infocontacto2">                
-                    <div id="contacto3">    
-                        <h1>${{i18n.contacto.ubicacion}}$</h1>  
+                <div id="subcontenedor_infocontacto2">
+                    <div id="contacto3">
+                        <h1>${{i18n.contacto.ubicacion}}$</h1>
                         <iframe src="https://mapsengine.google.com/map/embed?mid=zx0f5f9t2__Q.kFAn_okuhGMI"></iframe>
                     </div>
                     <div id="contacto4">

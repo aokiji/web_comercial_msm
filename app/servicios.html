@@ -11,20 +11,25 @@
 	</head>
 
 	<body>
-    	<header> 
-        	<div class="logo"></div>       	
+    	<header>
+        	<div class="logo"></div>
         	<nav>
                 <div id="iconomenu"></div>
-            	<div class="menu">
-                    <p><a href="index.html">${{i18n.menu.inicio}}$</a></p>
-                    <p><a href="servicios.html" class="marcado">${{i18n.menu.servicios}}$</a></p>
-                    <p><a href="nosotros.html">${{i18n.menu.nosotros}}$</a></p>
-                    <p><a href="galeria.html">${{i18n.menu.galeria}}$</a></p>
-                    <p><a href="contacto.html">${{i18n.menu.contacto}}$</a></p>
-                </div>
+								<ul class="menu">
+										<li><a href="index.html">${{i18n.menu.inicio}}$</a></li>
+											<li><a href="servicios.html" class="marcado">${{i18n.menu.servicios}}$</a></li>
+											<li><a href="nosotros.html">${{i18n.menu.nosotros}}$</a></li>
+											<li><a href="galeria.html">${{i18n.menu.galeria}}$</a></li>
+											<li><a href="contacto.html">${{i18n.menu.contacto}}$</a></li>
+											<ul id="menu_lenguaje">
+													<li id="lenguaje">Es</li>
+													<li class="submenu"><a href="http://multiservicioselmorche.es/en">En</a></li>
+													<li class="submenu"><a href="http://multiservicioselmorche.es/de">De</a></li>
+											</ul>
+								</ul>
             </nav>
         </header>
-        <section class="contenedor_servicios">     
+        <section class="contenedor_servicios">
             <div class="descripcion">
                 <h1>${{i18n.servicios.titulo}}$</h1>
                 <div class="arrow"></div>
@@ -34,7 +39,7 @@
                     <li><h2 id="serv01">${{i18n.servicios.reformas.titulo}}$</h2><p>${{i18n.servicios.reformas.descripcion}}$</p></li>
                     <li><h2 id="serv02">${{i18n.servicios.fontaneria.titulo}}$</h2><p>${{i18n.servicios.fontaneria.descripcion}}$</p></li>
                     <li><h2 id="serv03">${{i18n.servicios.pintura.titulo}}$</h2><p>${{i18n.servicios.pintura.descripcion}}$</p></li>
-                    <li><h2 id="serv04">${{i18n.servicios.climatizacion.titulo}}$</h2><p>${{i18n.servicios.climatizacion.descripcion}}$</p></li>  
+                    <li><h2 id="serv04">${{i18n.servicios.climatizacion.titulo}}$</h2><p>${{i18n.servicios.climatizacion.descripcion}}$</p></li>
                 </ul>
             </div>
             <div class="servicios2">

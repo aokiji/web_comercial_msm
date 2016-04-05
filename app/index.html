@@ -11,36 +11,41 @@
 	</head>
 
 	<body>
-    	<header> 
-        	<div class="logo"></div>       	
+    	<header>
+        	<div class="logo"></div>
         	<nav>
                 <div id="iconomenu"></div>
-            	<div class="menu">
-                    <p><a href="index.html">${{i18n.menu.inicio}}$</a></p>
-                    <p><a href="servicios.html">${{i18n.menu.servicios}}$</a></p>
-                    <p><a href="nosotros.html">${{i18n.menu.nosotros}}$</a></p>
-                    <p><a href="galeria.html">${{i18n.menu.galeria}}$</a></p>
-                    <p><a href="contacto.html">${{i18n.menu.contacto}}$</a></p>
-                </div>
+								<ul class="menu">
+                		<li><a href="index.html">${{i18n.menu.inicio}}$</a></li>
+                    	<li><a href="servicios.html">${{i18n.menu.servicios}}$</a></li>
+                    	<li><a href="nosotros.html">${{i18n.menu.nosotros}}$</a></li>
+                    	<li><a href="galeria.html">${{i18n.menu.galeria}}$</a></li>
+                    	<li><a href="contacto.html">${{i18n.menu.contacto}}$</a></li>
+                    	<ul id="menu_lenguaje">
+                          <li id="lenguaje">Es</li>
+                          <li class="submenu"><a href="http://multiservicioselmorche.es/en">En</a></li>
+                          <li class="submenu"><a href="http://multiservicioselmorche.es/de">De</a></li>
+                      </ul>
+                </ul>
             </nav>
         </header>
         <section class="contenedor_index">
-        	<div class="slider">                
-                <div id="img01">                 	           	
+        	<div class="slider">
+                <div id="img01">
                     <h1 class="sub01">${{i18n.inicio.banner.img01.cadena1}}$</h1><br>
                     <h1 class="sub01">${{i18n.inicio.banner.img01.cadena2}}$</h1>
-                </div>  
-                <div id="img02">                 	          	
+                </div>
+                <div id="img02">
                     <h1 class="sub02">${{i18n.inicio.banner.img02.cadena1}}$</h1><br>
                     <h1 class="sub02">${{i18n.inicio.banner.img02.cadena2}}$</h1>
-                </div> 
-                <div id="img03">                 	     	
+                </div>
+                <div id="img03">
                     <h1 class="sub03">${{i18n.inicio.banner.img03.cadena1}}$</h1><br>
                     <h1 class="sub03">${{i18n.inicio.banner.img03.cadena2}}$</h1>
-                </div>                
+                </div>
              </div>
         </section>
-        <section class="contenedor_subindex">       	
+        <section class="contenedor_subindex">
             <h2 id="subindex01">${{i18n.inicio.footer.cadena1}}$</h2>
             <h2 id="subindex02">${{i18n.inicio.footer.cadena2}}$</h2>
             <h2 id="subindex03">${{i18n.inicio.footer.cadena3}}$</h2>
