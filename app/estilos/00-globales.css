@@ -84,9 +84,6 @@ li{
 	font-weight:300;
 	font-size:1.4em;
 }
-.menu li:last-child {
-    padding: 0;
-}
 #menu_lenguaje {
     display: inline-flex;
     flex-flow: column;
