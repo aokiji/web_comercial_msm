@@ -1,0 +1,126 @@
+{
+    "locale": "en",
+    "menu": {
+        "inicio": "Start",
+        "servicios": "Arbeiten",
+        "nosotros": "Treffen Sie Uns",
+        "galeria": "Galerie",
+        "contacto": "Kontakt"
+    },
+    "inicio": {
+        "banner": {
+            "img01": {
+                "cadena1": "DIE PROFIS DIE SIE BRAUCHEN",
+                "cadena2": "FÜR IHR ZUHAUSE ODER ARBEITSPLATZ"
+            },
+            "img02": {
+                "cadena1": "MEHR ALS 20 JAHRE",
+                "cadena2": "ARBEITEN IN DER GANZEN AXARQUIA"
+            },
+            "img03": {
+                "cadena1": "KLEINE ODER GROSSE PROJEKTE:",
+                "cadena2": "LÖSUNGEN FÜR ALLE PROBLEME"
+            }
+        },
+        "footer": {
+            "cadena1": "SICHERHEIT",
+            "cadena2": "QUALITÄT",
+            "cadena3": "ZUVERLÄSSIGKEIT",
+            "cadena4": "IN ALLEM, WAS WIR TUN!"
+        }
+    },
+    "servicios": {
+        "titulo": "Unsere Dienstleisungen",
+        "reformas": {
+            "titulo": "Umgestaltung",
+            "descripcion": "Verwandeln sie jeden ort nach ihren wunschen, wir werden dahit umgehen."
+        },
+        "fontaneria": {
+            "titulo": "Klempner Arbeiten",
+            "descripcion": "Probleme hit den rohren? Keine sorge, wir arbeiten an allen arten von sanitär-installationen."
+        },
+        "pintura": {
+            "titulo": "Maler Arbeiten",
+            "descripcion": "Innen und aussen, gestalten sie ihr zuhause mit ihrer farbe nach wahl und es ist so gut wie neu."
+        },
+        "climatizacion": {
+            "titulo": "Klimaanlagen",
+            "descripcion": "Vergessen sie winter und sommer. Es wird ihnen nicht mehr zu heiss oder kalt sein."
+        },
+        "electricidad": {
+            "titulo": "Elektrik",
+            "descripcion": "Hoch und niederspannung, rufen sie uns für alvon elektrik arbeiten."
+        },
+        "piscinas": {
+            "titulo": "Swimming Pools",
+            "descripcion": "Sie Können swimming pool wartung oder reperaturen in unseren händen lassen, sie geniessen ihn einfach."
+        },
+        "placas_solares": {
+            "titulo": "Sonnen Energie",
+            "descripcion": "Möchten sie die vorteile von solar energie nutzen wir können ihre sonnenkollektoren installieren."
+        },
+        "limpiezas": {
+            "titulo": "Reinigung",
+            "descripcion": "Halten sie ihr haus sauber, unsere reinigungs experten werden mit allem fertig was sie brauchen."
+        }
+    },
+    "nosotros": {
+        "titulo": "Über Uns",
+        "seccion1": {
+            "titulo": "Ein unternehmen Verpflichtet zu unseren kunden",
+            "descripcion": "Wir haben im kopf das was wir machen ist für unsere kunden, deswegen machen wir unser bestes um unsere kunden zufrieden zu stellen. Alle unsere kunden sind sehr zufrieden mit unserer arbeit und wir sind sehr stolz drauf."
+        },
+        "seccion2": {
+            "titulo": "Immer im zeitplan",
+                "descripcion": "Wir arbeiten hart um maximale qualitat zu bieten in einem gewissen zeit rahmen"
+        },
+        "seccion3": {
+            "titulo": "Besten preis den sie finden",
+            "descripcion": "Wir kennen das geschäft und wir berechnen nicht mehr als wir anbieten. Wir geben ihnen einen detaillierten kosten voranschlag den niemand anderes unterbieten wird: wir geben allen kunden immer einen fairen preis."
+        },
+        "seccion4": {
+            "titulo": "Qualitat Über Allem",
+            "descripcion": "Wir arbeiten in der Axarquia seid mehr als 20 jahre, und seid dem anfang haben wir unser bestes gegeben um unseren service staetig zu verbessern unsere lange zeit im geschäft erlaubt uns die qualitat und exzellenz zu garantieren."
+        }
+    },
+    "galeria": {
+        "titulo": "Bilder Gallerie",
+        "descripcion": {
+            "titulo": "Sehen Sie Selber",
+            "subtitulo": "Beschreibung:",
+            "texto": "Unsere mühe und engagement spricht für sich selbst dies ist das ergebnis"
+        },
+        "imagenes": {
+            "/imagenes/galeria/01.jpg": "Badezimmer umbau, badewanne getauscht fur duschwanne mit duschwand.",
+            "/imagenes/galeria/02.jpg": "Eigenbauter kleiderschrank aus gipskarton mit vershiebbarenen holztüren.",
+            "/imagenes/galeria/03.jpg": "Installation einer dusche mit duschwand.",
+            "/imagenes/galeria/04.jpg": "Installation eines badezimmerschrankes mit spiegel und accesoires." ,
+            "/imagenes/galeria/05.jpg": "Installation eines badezimmerschrankes mit spiegel und accesoires." ,
+            "/imagenes/galeria/06.jpg": "Installation von wassereinheiten in einer nachbarschaft." ,
+            "/imagenes/galeria/07.jpg": "Umbau von treppen in einem gemeinschafts swimming pool" ,
+            "/imagenes/galeria/08.jpg": "Installation eines büros aus gipskarton, in oberen stockwerk mit aluminium fenstern.", 
+            "/imagenes/galeria/09.jpg": "Zugangstreppe aus schmiedeeisen.",
+            "/imagenes/galeria/10.jpg": "Installation einer dusche.",
+            "/imagenes/galeria/11.jpg": "Installation von sonnenkollektoren."
+        }
+    },
+    "contacto": {
+        "titulo": "Kontakt",
+        "formulario": {
+            "nombre": "Name",
+            "email": "E-Mail",
+            "asunto": "Betreft",
+            "aceptar": "SENDEN",
+            "texto": "Ihre nachricht hier",
+            "resultado": {
+                "error": "Es ist ein fehler bei ihrer anfrage aufgetreten, bitte versuchen sie es später nochmal.",
+                "ok": "Nachricht erfolgreich gesendet, wir werden uns bei ihnen so bald wie möglich melden."
+            }
+        },
+        "ubicacion": "Oder besuchen sie uns im büro",
+        "horario": {
+            "entre_semana": "Montag bis Freitag <br>09:00 to 13:30 <br>17:00 to 20:00",
+            "fines_de_semana": "Samstag <br>09:00 to 13:30"
+        }
+    }
+}
