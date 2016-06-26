@@ -5,10 +5,7 @@
         "servicios": "Services",
         "nosotros": "Meet Us",
         "galeria": "Gallery",
-        "contacto": "Contact Us",
-        "Es": "En",
-        "En": "Es",
-        "De": "De"
+        "contacto": "Contact Us"
     },
     "inicio": {
         "banner": {
