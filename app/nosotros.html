@@ -1,34 +1,6 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Multiservicios El Morche</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link type="text/css" rel="stylesheet" href="/estilos/app.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,400" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,400italic" rel="stylesheet" type="text/css">
-        <script type="text/javascript" src="/scripts/app.min.js"></script>
-	</head>
-
-	<body>
-    	<header>
-        	<div class="logo"></div>
-        	<nav>
-                <div id="iconomenu"></div>
-								<ul class="menu">
-										<li><a href="index.html">${{i18n.menu.inicio}}$</a></li>
-											<li><a href="servicios.html">${{i18n.menu.servicios}}$</a></li>
-											<li><a href="nosotros.html" class="marcado">${{i18n.menu.nosotros}}$</a></li>
-											<li><a href="galeria.html">${{i18n.menu.galeria}}$</a></li>
-											<li><a href="contacto.html">${{i18n.menu.contacto}}$</a></li>
-                        <ul id="menu_lenguaje">
-                          <li id="lenguaje"><a href="../es/nosotros.html">Es</a></li>
-                          <li class="submenu"><a href="../en/nosotros.html">En</a></li>
-                          <li class="submenu"><a href="../de/nosotros.html">De</a></li>
-                        </ul>
-								</ul>
-            </nav>
-        </header>
+{% extends "layouts/default.nunjucks" %}
+{% set menu = "nosotros" %}
+{% block content %}
         <section class="contenedor_nosotros">
             <div class="descripcion">
                 <h1>${{i18n.nosotros.titulo}}$</h1>
@@ -49,8 +21,4 @@
                 </article>
             </section>
         </section>
-        <footer>
-            <p>Multiservicios El Morche  |  Ctra. de Almería 200  |  952 968 184 / 600 621 857</p>
-        </footer>
-	</body>
-</html>
+{% endblock %}

@@ -1,44 +1,13 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Multiservicios El Morche</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link type="text/css" rel="stylesheet" href="/estilos/app.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,400" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,400italic" rel="stylesheet" type="text/css">
-        <script type="text/javascript" src="/scripts/app.min.js"></script>
-	</head>
-	<body>
-    	<header>
-        	<div class="logo"></div>
-        	<nav>
-                <div id="iconomenu"></div>
-								<ul class="menu">
-										<li><a href="index.html">${{i18n.menu.inicio}}$</a></li>
-											<li><a href="servicios.html">${{i18n.menu.servicios}}$</a></li>
-											<li><a href="nosotros.html">${{i18n.menu.nosotros}}$</a></li>
-											<li><a href="galeria.html" class="marcado">${{i18n.menu.galeria}}$</a></li>
-											<li><a href="contacto.html">${{i18n.menu.contacto}}$</a></li>
-                        <ul id="menu_lenguaje">
-                          <li id="lenguaje"><a href="../es/galeria.html">Es</a></li>
-                          <li class="submenu"><a href="../en/galeria.html">En</a></li>
-                          <li class="submenu"><a href="../de/galeria.html">De</a></li>
-                        </ul>
-								</ul>
-            </nav>
-        </header>
-        <div class="descripcion">
-            <!-- Cambiar a ANTES Y DESPUES cuando estén las fotos -->
-            <h1>${{i18n.galeria.titulo}}$</h1>
-            <div class="arrow"></div>
-        </div>
-        <div id="fondogaleria">
-            <section class="galeria">
-            </section>
-        </div>
-        <footer>
-            <p>Multiservicios El Morche  |  Ctra. de Almería 200  |  952 968 184 / 600 621 857</p>
-        </footer>
-	</body>
-</html>
+{% extends "layouts/default.nunjucks" %}
+{% set menu = "galeria" %}
+{% block content %}
+					<div class="descripcion">
+							<!-- Cambiar a ANTES Y DESPUES cuando estén las fotos -->
+							<h1>${{i18n.galeria.titulo}}$</h1>
+							<div class="arrow"></div>
+					</div>
+					<div id="fondogaleria">
+							<section class="galeria">
+							</section>
+					</div>
+{% endblock %}

@@ -1,0 +1,40 @@
+<section class="contenedor_contacto">
+    <div class="descripcion">
+        <h1>${{i18n.contacto.titulo}}$</h1>
+        <div class="arrow"></div>
+    </div>
+    {% if showForm %}
+    <form id="formulario" action="enviar_email.php" method="post" enctype="multipart/form-data">
+        <div id="infoformulario1">
+            <input type="hidden" name="locale" value=${{i18n.locale}}$></input>
+            <label>${{i18n.contacto.formulario.nombre}}$</label><input name="nombre" type="text" size="35" required>
+            <label>${{i18n.contacto.formulario.email}}$</label><input name="mail" type="text" size="35" required>
+            <label>${{i18n.contacto.formulario.asunto}}$</label><input name="asunto" type="text" size="35"></div>
+        <div id="infoformulario2">
+            <textarea name="areadetexto" required>${{i18n.contacto.formulario.texto}}$</textarea>
+            <input id="enviar" name="ok" type="submit" value="${{i18n.contacto.formulario.aceptar}}$"></div>
+    </form>
+    {% endif %}
+    {% if alerta_correo %}
+    <div class="alerta_correo" id="<$ alerta_correo.id $>">
+        <p>${{i18n.contacto.formulario.resultado.<$ alerta_correo.type $>}}$</p>
+    </div>
+    {% endif %}
+    <div id="infocontacto1">
+        <div id="contacto1"><p>952 968 184<br>600 621 857</p></div>
+        <div id="contacto2"><p>tienda@multiservicioselmorche.es<br>delossantosvh@hotmail.com</p></div>
+    </div>
+    <div id="infocontacto2">
+        <div id="subcontenedor_infocontacto2">
+            <div id="contacto3">
+                <h1>${{i18n.contacto.ubicacion}}$</h1>
+                <iframe src="https://mapsengine.google.com/map/embed?mid=zx0f5f9t2__Q.kFAn_okuhGMI"></iframe>
+            </div>
+            <div id="contacto4">
+                <p>Carretera de Almería 200 <br>El Morche-Málaga</p>
+                <p>${{i18n.contacto.horario.entre_semana}}$</p>
+                <p>${{i18n.contacto.horario.fines_de_semana}}$</p>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Multiservicios El Morche</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="/estilos/app.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,400" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,400italic" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="/scripts/app.min.js"></script>
+	</head>
+
+	<body>
+    	<header>
+        	<div class="logo"></div>
+        	<nav>
+                <div id="iconomenu"></div>
+            	<ul class="menu">
+                    <li><a href="index.html" class="<$ "marcado" if menu == "index"  $>" >${{i18n.menu.inicio}}$</a></li>
+                    <li><a href="servicios.html" class="<$ "marcado" if menu == "servicios"  $>">${{i18n.menu.servicios}}$</a></li>
+                    <li><a href="nosotros.html" class="<$ "marcado" if menu == "nosotros"  $>">${{i18n.menu.nosotros}}$</a></li>
+                    <li><a href="galeria.html" class="<$ "marcado" if menu == "galeria"  $>">${{i18n.menu.galeria}}$</a></li>
+                    <li><a href="contacto.html" class="<$ "marcado" if menu == "contacto"  $>">${{i18n.menu.contacto}}$</a></li>
+										<ul id="menu_lenguaje">
+                      <li id="lenguaje"><a href="../es/<$ menu $>.html">Es</a></li>
+                      <li class="submenu"><a href="../en/<$ menu $>.html">En</a></li>
+                      <li class="submenu"><a href="../de/<$ menu $>.html">De</a></li>
+                    </ul>
+              </ul>
+            </nav>
+        </header>
+        {% block content %} {% endblock %}
+        <footer>
+        	<p>Multiservicios El Morche  |  Ctra. de Almería 200  |  952 968 184 / 600 621 857</p>
+        </footer>
+	</body>
+</html>
