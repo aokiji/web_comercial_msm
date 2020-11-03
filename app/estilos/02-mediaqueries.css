@@ -187,9 +187,6 @@
 
     /* section servicios */
 
-    .contenedor_servicios {
-        height:800px;
-    }
     .contenedor_servicios h2 {
         font-size:1em;
         margin:0;
@@ -472,12 +469,6 @@
 
     /* section servicios */
 
-    .contenedor_servicios {
-        height: 1300px;
-    }
-    #servicios1 {
-        height: 50%;
-    }
     .contenedor_servicios ul {
         flex-wrap: wrap;
         width:90%;

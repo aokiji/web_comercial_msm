@@ -1,10 +1,9 @@
-body {    
+body {
     margin: 0 auto;
 }
 html, body {
-    height: 100%;
     width: 100%;
-} 
+}
 #fondogaleria {
     display:flex;
     height: 80%;
@@ -34,7 +33,7 @@ html, body {
     padding-bottom: 1em;
     background-color: #e6e6e6;
 }
-#ventanagaleria {   
+#ventanagaleria {
     /*
     * CAMBIAR A COVER EL BACKGROUND SIZE CUANDO ESTÉN LAS FOTOS
     */
@@ -72,7 +71,7 @@ html, body {
     padding: 1em;
     margin: 0 auto;
 }
-#descripcion_galeria p:nth-child(2) {     
+#descripcion_galeria p:nth-child(2) {
     border-bottom: 1em solid white;
     height: 6em;
 }
@@ -83,7 +82,7 @@ html, body {
     border-bottom: 1px solid darkgrey;
 }
 #texto_descripcion {
-    overflow: auto;    
+    overflow: auto;
 }
 #areanavegacion {
     height: 100%;
@@ -110,7 +109,7 @@ html, body {
     background: url(../iconos/ICOnext_hover.svg) no-repeat;
 }
 #nav1:hover, #nav2:hover {
-    background-position: center;   
+    background-position: center;
     cursor: pointer;
 }
 #barragaleria {
